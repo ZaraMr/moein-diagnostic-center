@@ -1,12 +1,10 @@
 @font-face {
   font-family: "vazir";
   src: url("../fonts/Vazirmatn-Regular.woff2") format("woff2");
-  /* font-weight: 400; */
 }
 @font-face {
   font-family: "vazir";
   src: url("../fonts/Vazirmatn-Bold.woff2") format("woff2");
-  font-weight: 700;
 }
 
 @font-face {
@@ -73,20 +71,16 @@ header .navbar {
 }
 
 header .navbar .menu-btn i {
-  font-size: 30px;
+  font-size: 22px;
   transition: 0.3s ease;
   color: var(--yellow);
 }
 
-/* header .navbar i.menu:hover {
-  color: var(--dark-blue);
-} */
-
 header .navbar .nav-list {
   position: fixed;
-  right: -300px;
+  right: -230px;
   top: 0;
-  width: 300px;
+  width: 230px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -107,23 +101,26 @@ header .navbar .nav-list .menu-exit i {
   position: absolute;
   top: 15px;
   right: 15px;
-  font-size: 25px;
+  font-size: 20px;
 }
 
-header .navbar .nav-list .menu-exit i:hover {
+header .navbar .nav-list .menu-exit i:hover,
+header .navbar .nav-list .menu-exit i:active {
   color: red;
 }
 
 header .navbar .nav-list i {
   margin-left: 10px;
+  font-size: 14px;
 }
 
 header .navbar .nav-list .nav-item a {
   color: var(--black);
-  font-size: 18px;
+  font-size: 15px;
 }
 
-header .navbar .nav-list .nav-item a:hover {
+header .navbar .nav-list .nav-item a:hover,
+header .navbar .nav-list .nav-item a:active {
   color: var(--white);
 }
 
@@ -133,13 +130,13 @@ header .navbar .logo-container a {
 }
 
 header .navbar .logo-container .logo-img {
-  width: 80px;
+  width: 60px;
   height: auto;
 }
 
 header .navbar .logo-container .logo-text {
   font-family: "lalehzar";
-  font-size: 28px;
+  font-size: 20px;
   color: var(--black);
 }
 
@@ -160,53 +157,57 @@ header .navbar .logo-container .logo-text {
 }
 
 .hero-section .hero-content {
-  /* width: 100%; */
   text-align: center;
-  margin-top: 40px;
+  margin-top: 20px;
   padding: 0 25px;
 }
 
 .hero-section .hero-content .hero-title {
-  font-size: 32px;
+  font-size: 22px;
   font-family: "lalehzar";
-  margin-bottom: 30px;
-  /* border-bottom: 2px solid var(--yellow); */
-  /* font-weight: 600; */
+  margin-bottom: 15px;
 }
 
 .hero-section .hero-content .hero-context {
-  font-size: 15px;
-  line-height: 30px;
+  font-size: 14px;
+  line-height: 28px;
   margin-bottom: 50px;
 }
 
 .hero-section .hero-content .contact-us-btn {
   background: var(--yellow);
-  padding: 12px 25px;
+  padding: 10px 22px;
   border-radius: 8px;
+  font-size: 14px;
   font-weight: 600;
   color: var(--black);
   border: 1px solid var(--yellow);
-  /* transition: 0.3s ease; */
 }
 
-.hero-section .hero-content .contact-us-btn:hover {
+.hero-section .hero-content .contact-us-btn:hover,
+.hero-section .hero-content .contact-us-btn:active {
   background-color: var(--white);
   color: var(--yellow);
 }
 
 /* About section styling */
 .about-section {
-  margin: 70px 0;
+  margin: 50px 10px;
   text-align: center;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.about-section .about-wrapper {
+  padding: 15px 25px;
 }
 
 .about-section .img-container {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
 .about-section .img-container img {
-  width: 70%;
+  width: 68%;
   border: 3px solid var(--yellow);
   padding: 5px;
   border-radius: 50%;
@@ -214,129 +215,126 @@ header .navbar .logo-container .logo-text {
   filter: grayscale(20%);
 }
 
-.about-section .about-content {
-  padding: 0 25px;
-}
-
 .about-section .about-content .section-title {
-  font-size: 22px;
-  margin-bottom: 20px;
+  font-size: 20px;
+  margin-bottom: 15px;
 }
 
 .about-section .about-content .about-context {
-  font-size: 15px;
+  font-size: 14px;
   line-height: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
-.about-section .about-content .about-us-btn {
+
+.about-section .about-us-btn {
   background: var(--dark-purple);
   display: inline-block;
   width: 100%;
-  padding: 20px 0;
+  padding: 12px 0;
   border: 1px solid var(--dark-purple);
-  border-radius: 8px;
-  font-size: 18px;
-  font-weight: 600;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  font-size: 15px;
   color: var(--white);
-  /* transition: 0.3s ease; */
 }
 
+.about-section .about-content .about-us-btn:active,
 .about-section .about-content .about-us-btn:hover {
   background: var(--white);
   color: var(--dark-purple);
 }
 
+/* Services section styling */
 .services-section {
   text-align: center;
-  margin-top: 50px;
 }
 
 .services-section .section-title {
-  font-size: 22px;
-  margin-bottom: 30px;
+  font-size: 20px;
+  margin-bottom: 15px;
 }
 
 .services-section .services-list {
   display: flex;
   flex-direction: column;
-  padding: 0 25px;
   gap: 20px;
-  margin-bottom: 70px;
+  margin: 0 10px 70px;
 }
 
 .services-section .services-list .service-item {
   width: 100%;
-  min-height: 600px;
-  border: 2px solid var(--dark-blue);
-  border-radius: 8px;
-  /* padding: 10px 20px; */
-}
-
-.services-section .services-list .service-item .service-card a {
-  color: var(--black);
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .services-section .services-list .service-item .service-img-wrap img {
   width: 100%;
-  height: 350px;
+  height: 250px;
   filter: grayscale(30%);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .services-section .services-list .service-item .service-title {
-  font-size: 22px;
-  margin: 15px 0 20px;
+  font-size: 18px;
+  margin: 10px 0 15px;
 }
 
 .services-section .services-list .service-item .service-about {
-  font-size: 15px;
-  padding: 0 20px;
+  font-size: 14px;
+  padding: 0 30px;
   line-height: 30px;
+  list-style-type: circle;
+  text-align: right;
 }
 
 .services-section .services-list .service-item .service-more-btn {
   display: inline-block;
-  margin-top: 50px;
+  margin-top: 30px;
   background: var(--dark-blue);
   width: 100%;
-  height: 60px;
-  padding-top: 15px;
-  font-size: 16px;
+  height: 50px;
+  padding-top: 10px;
+  font-size: 14px;
   font-weight: 600;
-  border-top: 2px solid var(--dark-blue);
+  border: 1px solid var(--dark-blue);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   transition: 0.3s ease;
   color: var(--white);
 }
 
-.services-section .services-list .service-item .service-more-btn:hover {
+.services-section .services-list .service-item .service-more-btn:hover,
+.services-section .services-list .service-item .service-more-btn:active {
   background: var(--white);
   color: var(--dark-blue);
 }
 
+/* Footer section styling */
 .footer-section .footer-wrapper {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
   background: #f2f2f2;
-  padding: 60px 0;
+  padding: 40px 25px 10px;
 }
 
 .footer-section .footer-wrapper .footer-nav-list {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
   align-items: center;
-  font-size: 18px;
 }
 
 .footer-section .footer-wrapper .footer-nav-list a {
   color: var(--black);
+  font-size: 14px;
 }
 
-.footer-section .footer-wrapper .footer-nav-list a:hover {
+.footer-section .footer-wrapper .footer-nav-list a:hover,
+.footer-section .footer-wrapper .footer-nav-list a:active {
   color: var(--dark-pink);
 }
 
@@ -344,11 +342,17 @@ header .navbar .logo-container .logo-text {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin-top: 10px;
+}
+
+.footer-section .footer-wrapper .contact-list li {
+  font-size: 12px;
 }
 
 .footer-section .footer-wrapper .contact-list i {
   color: var(--dark-pink);
-  font-size: 14px;
+  font-size: 10px;
+  margin-left: 5px;
 }
 
 .footer-section .footer-wrapper .contact-list address.address {
@@ -357,32 +361,40 @@ header .navbar .logo-container .logo-text {
 }
 
 .footer-section .footer-wrapper .contact-list .phone-num {
-  font-size: 18px;
+  font-size: 15px;
   color: var(--dark-pink);
 }
 
 .footer-section .footer-wrapper .contact-list .phone-num:hover,
-.footer-section .footer-wrapper .social i:hover {
+.footer-section .footer-wrapper .social i:hover,
+.footer-section .footer-wrapper .contact-list .phone-num:active,
+.footer-section .footer-wrapper .social i:active {
   color: var(--yellow);
 }
 
 .footer-section .footer-wrapper .social {
-  /* text-align: center; */
   margin-top: 15px;
 }
 
 .footer-section .footer-wrapper .social i {
-  font-size: 24px;
-  margin-right: 10px;
+  font-size: 16px;
+  margin-right: 8px;
 }
 
-/* {
-  color: var(--yellow);
-} */
+.footer-section .footer-wrapper .contact-list .slogan {
+  font-family: "lalehzar";
+  margin-top: 35px;
+  text-align: center;
+  font-size: 15px;
+}
 
 p.copy-right {
   text-align: center;
-  font-size: 14px;
+  font-size: 10px;
+  color: var(--dark-pink);
+}
+p.copy-right i {
+  font-size: 8px;
 }
 /* @media screen and (min-width: 768px) {
   .navbar .menu {
