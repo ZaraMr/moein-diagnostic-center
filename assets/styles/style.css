@@ -144,6 +144,15 @@ header .navbar .logo-container .logo-text {
   color: var(--black);
 }
 
+.section {
+  transition: transform 1s, opacity 1s;
+}
+
+.section-hidden {
+  opacity: 0;
+  transform: translateY(5rem);
+}
+
 /* Hero section styling */
 .hero-section {
   margin: 0 auto;
