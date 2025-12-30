@@ -1,12 +1,12 @@
 "use strict";
 
 // variables
+const body = document.body;
 const menuBtn = document.querySelector(".menu-btn");
 const menuExitBtn = document.querySelector(".menu-exit");
 const mobileNav = document.querySelector(".nav-list");
-const body = document.body;
+const headerNavLinks = document.querySelectorAll(".header-nav-link");
 const sections = document.querySelectorAll(".section");
-console.log(sections);
 
 // reveal sections
 const revealSection = function (entries, observer) {
@@ -48,3 +48,10 @@ function outsideClick(e) {
 }
 
 document.addEventListener("click", outsideClick);
+
+// close menu when nav link is clicked
+const handleNavLinkClick = function (e) {
+  if (!e.target.closest(".header-nav-link")) return;
+  body.classList.remove("show-mobile-menu");
+};
+mobileNav.addEventListener("click", handleNavLinkClick);
