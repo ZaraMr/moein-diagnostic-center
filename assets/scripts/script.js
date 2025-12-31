@@ -7,6 +7,8 @@ const menuExitBtn = document.querySelector(".menu-exit");
 const mobileNav = document.querySelector(".nav-list");
 const headerNavLinks = document.querySelectorAll(".header-nav-link");
 const sections = document.querySelectorAll(".section");
+const topSentinel = document.getElementById("top-sentinel");
+const scorllToTopBtn = document.querySelector(".scroll-top-btn");
 
 // reveal sections
 const revealSection = function (entries, observer) {
@@ -55,3 +57,23 @@ const handleNavLinkClick = function (e) {
   body.classList.remove("show-mobile-menu");
 };
 mobileNav.addEventListener("click", handleNavLinkClick);
+
+// scroll btn
+const scrollTopObserver = new IntersectionObserver(
+  ([entry]) => {
+    scorllToTopBtn.classList.toggle("show", !entry.isIntersecting);
+  },
+  {
+    root: null,
+    threshold: 0,
+  }
+);
+
+console.log(topSentinel);
+scrollTopObserver.observe(topSentinel);
+scorllToTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
