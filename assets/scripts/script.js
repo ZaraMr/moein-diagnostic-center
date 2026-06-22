@@ -8,12 +8,12 @@ const mobileNav = document.querySelector(".nav-list");
 const headerNavLinks = document.querySelectorAll(".header-nav-link");
 const sections = document.querySelectorAll(".section");
 const topSentinel = document.getElementById("top-sentinel");
-const scorllToTopBtn = document.querySelector(".scroll-top-btn");
+const scrollToTopBtn = document.querySelector(".scroll-top-btn");
 
 // reveal sections
 const revealSection = function (entries, observer) {
   const [entry] = entries;
-  console.log(entry);
+  // console.log(entry);
 
   if (!entry.isIntersecting) return;
 
@@ -61,17 +61,17 @@ mobileNav.addEventListener("click", handleNavLinkClick);
 // scroll btn
 const scrollTopObserver = new IntersectionObserver(
   ([entry]) => {
-    scorllToTopBtn.classList.toggle("show", !entry.isIntersecting);
+    scrollToTopBtn.classList.toggle("show", !entry.isIntersecting);
   },
   {
     root: null,
     threshold: 0,
-  }
+  },
 );
 
-console.log(topSentinel);
+// console.log(topSentinel);
 scrollTopObserver.observe(topSentinel);
-scorllToTopBtn.addEventListener("click", () => {
+scrollToTopBtn.addEventListener("click", () => {
   window.scrollTo({
     top: 0,
     behavior: "smooth",

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fa" dir="rtl">
   <head>
     <meta charset="UTF-8" />
@@ -21,32 +21,38 @@
       <!-- Header / Navbar -->
       <header class="header">
         <nav aria-label="منوی اصلی" class="navbar">
-          <button class="menu-btn"><i class="fa-solid fa-bars"></i></button>
+          <button class="menu-btn" aria-label="باز کردن منو">
+            <i class="fa-solid fa-bars"></i>
+          </button>
           <ul class="nav-list">
             <li class="nav-item">
-              <button class="menu-exit">
+              <button class="menu-exit" aria-label="بستن منو">
                 <i class="fa-solid fa-circle-xmark"></i>
               </button>
             </li>
             <li class="nav-item home">
-              <i class="fa-solid fa-house"></i><a href="#main" class="header-nav-link">صفحه نخست</a>
+              <i class="fa-solid fa-house"></i
+              ><a href="#main" class="header-nav-link">صفحه نخست</a>
             </li>
             <li class="nav-item">
-              <i class="fa-solid fa-wrench"></i><a href="#services" class="header-nav-link">خدمات ما</a>
+              <i class="fa-solid fa-wrench"></i
+              ><a href="#services" class="header-nav-link">خدمات ما</a>
             </li>
             <li class="nav-item">
               <i class="fa-solid fa-file-lines"></i>
-              <a href="#" class="header-nav-link">مقالات</a>
+              <a href="#articles" class="header-nav-link">مقالات</a>
             </li>
             <li class="nav-item">
-              <i class="fa-solid fa-circle-info"></i><a href="#about-us" class="header-nav-link">درباره ما</a>
+              <i class="fa-solid fa-circle-info"></i
+              ><a href="#about-us" class="header-nav-link">درباره ما</a>
             </li>
             <li class="nav-item">
-              <i class="fa-solid fa-phone-flip"></i><a href="#" class="header-nav-link">تماس با ما</a>
+              <i class="fa-solid fa-phone-flip"></i
+              ><a href="#" class="header-nav-link">تماس با ما</a>
             </li>
           </ul>
           <div class="logo-container">
-            <a href="#">
+            <a href="/">
               <p class="logo-text">دیاگ سنتر معین</p>
 
               <img
@@ -75,7 +81,7 @@
             <a href="tel:09184903391" class="contact-us-btn btn">تماس فوری</a>
           </div>
         </section>
-    <div id="top-sentinel"></div>
+        <div id="top-sentinel"></div>
 
         <!-- About Section -->
         <section id="about-us" class="about-section section">
@@ -92,7 +98,7 @@
                 سنگین هستم.در دیاگ سنتر معین کیفیت کار، دقت و رضایت شما اولویت
                 اصلی ماست.
               </p>
-          <a href="#" class="about-us-desktop-btn btn">بیشتر</a>
+              <a href="#" class="about-us-desktop-btn btn">بیشتر</a>
             </div>
           </div>
           <a href="#" class="about-us-btn btn">درباره ما</a>
@@ -101,176 +107,235 @@
         <section id="services" class="services-section section">
           <h2 class="section-title">خدمات ما</h2>
           <ul class="services-list">
-            <li class="service-item">
-              <article class="service-card">
-                  <div class="service-img-wrap">
-                    <img
-                      src="assets/images/کامیون-داف-5.webp"
-                      alt="دیاگ و عیب‌یابی تخصصی کامیون‌های سنگین با دستگاه پیشرفته در اراک"
-                    />
-                  </div>
-                  <h3 id="service-1" class="service-title">دیاگ و عیب یابی</h3>
-                  <ul
-                    class="service-about"
-                  >
-                    <li>عیب یابی تخصصی با دستگاه های اصلی و به روز</li>
-                    <li>
-                      دیاگ و ریمپ خودروهای سنگین چینی از جمله : فورس، یوجین، جک،
-                      دایون، فوتون، دیما، شاکمان، و...
-                    </li>
-                    <li>قطع ادبلو با برنامه اصلی و بدون خطا</li>
-                    <li>کارشناسی فنی و تشخیص دقیق مشکلات</li>
-                  </ul>
-                  <a href="#" class="service-more-btn" aria-labelledby="service-1">بیشتر</a>
+            <li>
+              <article class="card card--service">
+                <div class="card-img">
+                  <img
+                    src="assets/images/کامیون-داف-5.webp"
+                    alt="دیاگ و عیب‌یابی تخصصی کامیون‌های سنگین با دستگاه پیشرفته در اراک"
+                  />
+                </div>
+                <h3 id="service-1" class="card-title">دیاگ و عیب یابی</h3>
+                <ul class="card-content card-content--service">
+                  <li>عیب یابی تخصصی با دستگاه های اصلی و به روز</li>
+                  <li>
+                    دیاگ و ریمپ خودروهای سنگین چینی از جمله : فورس، یوجین، جک،
+                    دایون، فوتون، دیما، شاکمان، و...
+                  </li>
+                  <li>قطع ادبلو با برنامه اصلی و بدون خطا</li>
+                  <li>کارشناسی فنی و تشخیص دقیق مشکلات</li>
+                </ul>
+                <a href="#" class="card-link" aria-labelledby="service-1"
+                  >بیشتر</a
+                >
               </article>
             </li>
-            <li class="service-item">
-              <article class="service-card">
-                
-                  <div class="service-img-wrap">
-                    <img
-                      src="assets/images/کامیون-داف-5.webp"
-                      alt="کالیبراسیون و تنظیمات حرفه‌ای سیستم‌های الکترونیکی کامیون با دستگاه های تخصصی"
-
-                    />
-                  </div>
-                  <h3 id="service-2" class="service-title">
-                    کالیبراسیون و تنظیمات حرفه ای
-                  </h3>
-                  <ul
-                    class="service-about"
-                  >
-                    <li>کالیبره انواع ECU (کنترل کننده های الکترونیکی)</li>
-                    <li>کالیبره گیربکس های ZF و ترکسون</li>
-                    <li>کالیبره VGT (توربوهای متعیر)</li>
-                    <li>کالیبره AEBS (سیستم ترمز اضطراری)</li>
-                    <li>تنظیم ارتفاع و تنظیم ترمز</li>
-                    <li>سرویس درب گیربکس</li>
-                  </ul>
-                  <a href="#" class="service-more-btn" aria-labelledby="service-2">بیشتر</a>
-                
+            <li>
+              <article class="card card--service">
+                <div class="card-img">
+                  <img
+                    src="assets/images/کامیون-داف-5.webp"
+                    alt="کالیبراسیون و تنظیمات حرفه‌ای سیستم‌های الکترونیکی کامیون با دستگاه های تخصصی"
+                  />
+                </div>
+                <h3 id="service-2" class="card-title">
+                  کالیبراسیون و تنظیمات حرفه ای
+                </h3>
+                <ul class="card-content card-content--service">
+                  <li>کالیبره انواع ECU (کنترل کننده های الکترونیکی)</li>
+                  <li>کالیبره گیربکس های ZF و ترکسون</li>
+                  <li>کالیبره VGT (توربوهای متعیر)</li>
+                  <li>کالیبره AEBS (سیستم ترمز اضطراری)</li>
+                  <li>تنظیم ارتفاع و تنظیم ترمز</li>
+                  <li>سرویس درب گیربکس</li>
+                </ul>
+                <a href="#" class="card-link" aria-labelledby="service-2"
+                  >بیشتر</a
+                >
               </article>
             </li>
-            <li class="service-item">
-              <article class="service-card">
-                
-                  <div class="service-img-wrap">
-                    <img
-                      src="assets/images/کامیون-داف-5.webp"
-                      alt="خدمات برق و الکترونیک کامیون شامل سیم‌کشی تخصصی، تعمیر کامل برق و رفع مشکلات سیستم‌های الکترونیکی"
-                    />
-                  </div>
-                  <h3 id="service-3" class="service-title">
-                    خدمات برق و الکترونیک
-                  </h3>
-                  <ul
-                    class="service-about"
-                  >
-                    <li>سیم‌کشی تخصصی خودروهای سنگین</li>
-                    <li>تعمیرات کامل برق خودرو</li>
-                    <li>رفع مشکلات مربوط به سیستم‌های الکترونیکی</li>
-                  </ul>
-                 <a href="#" class="service-more-btn" aria-labelledby="service-3">بیشتر</a>
-                
+            <li>
+              <article class="card card--service">
+                <div class="card-img">
+                  <img
+                    src="assets/images/کامیون-داف-5.webp"
+                    alt="خدمات برق و الکترونیک کامیون شامل سیم‌کشی تخصصی، تعمیر کامل برق و رفع مشکلات سیستم‌های الکترونیکی"
+                  />
+                </div>
+                <h3 id="service-3" class="card-title">خدمات برق و الکترونیک</h3>
+                <ul class="card-content card-content--service">
+                  <li>سیم‌کشی تخصصی خودروهای سنگین</li>
+                  <li>تعمیرات کامل برق خودرو</li>
+                  <li>رفع مشکلات مربوط به سیستم‌های الکترونیکی</li>
+                </ul>
+                <a href="#" class="card-link" aria-labelledby="service-3"
+                  >بیشتر</a
+                >
               </article>
             </li>
-            <li class="service-item">
-              <article class="service-card">
-                
-                  <div class="service-img-wrap">
-                    <img
-                      src="assets/images/کامیون-داف-5.webp"
-                      alt="برنامه‌ریزی و بهینه‌سازی عملکرد کامیون برای افزایش توان و بهبود راندمان"
-                    />
-                  </div>
-                  <h3 id="service-4" class="service-title">
-                    برنامه‌ریزی و بهینه‌سازی (ریمپ)
-                  </h3>
-                  <ul
-                    class="service-about"
-                  >
-                    <li>باز کردن محدودیت سرعت</li>
-                    <li>افزایش توان و گشتاور موتور</li>
-                    <li>کاهش دمای آب و بهبود عملکرد خنک‌ کنندگی</li>
-                    <li>تنظیمات سفارشی برای عملکرد بهتر خودرو</li>
-                  </ul>
-                 <a href="#" class="service-more-btn" aria-labelledby="service-4">بیشتر</a>
+            <li>
+              <article class="card card--service">
+                <div class="card-img">
+                  <img
+                    src="assets/images/کامیون-داف-5.webp"
+                    alt="برنامه‌ریزی و بهینه‌سازی عملکرد کامیون برای افزایش توان و بهبود راندمان"
+                  />
+                </div>
+                <h3 id="service-4" class="card-title">
+                  برنامه‌ریزی و بهینه‌سازی (ریمپ)
+                </h3>
+                <ul class="card-content card-content--service">
+                  <li>باز کردن محدودیت سرعت</li>
+                  <li>افزایش توان و گشتاور موتور</li>
+                  <li>کاهش دمای آب و بهبود عملکرد خنک‌ کنندگی</li>
+                  <li>تنظیمات سفارشی برای عملکرد بهتر خودرو</li>
+                </ul>
+                <a href="#" class="card-link" aria-labelledby="service-4"
+                  >بیشتر</a
+                >
               </article>
             </li>
-            <!-- <li class="service-item">
-              <article class="service-card">
-                
-                  <div class="service-img-wrap">
-                    <img
-                      src="assets/images/کامیون-داف-5.webp"
-                      alt="کامیون داف"
-                    />
-                  </div>
-                  <h3 id="service-5" class="service-title">عنوان خدمت</h3>
-                   <ul
-                    class="service-about"
-                  >
-                    <li>باز کردن محدودیت سرعت</li>
-                    <li>افزایش توان و گشتاور موتور</li>
-                    <li>کاهش دمای آب و بهبود عملکرد خنک‌ کنندگی</li>
-                    <li>تنظیمات سفارشی برای عملکرد بهتر خودرو</li>
-                  </ul>
-                 <a href="#" class="service-more-btn" aria-labelledby="service-5">بیشتر</a>
-              </article>
-            </li> -->
-              </ul>
+          </ul>
         </section>
-        <!-- Footer Section -->
-        
+
+        <section id="articles" class="articles-section section">
+          <h2 class="section-title">مقالات</h2>
+
+          <ul class="articles-list">
+            <li>
+              <article class="card card--article">
+                <div class="card-img">
+                  <img
+                    src="assets/images/تصویر-هشدار-زرد-گیربکس.webp"
+                    alt="نمایش هشدار زرد گیربکس در کامیون های DAF Euro 6"
+                  />
+                </div>
+                <h3 id="article-1" class="card-title">هشدار زرد گیربکس</h3>
+                <div class="card-content">
+                  <p class="article-excerpt">
+                    نمایش هشدار زرد گیربکس با پیام Transmission Malfunction در
+                    کامیون‌های داف یورو 6 مجهز به گیربکس TraXon، به معنای وجود
+                    اختلال در عملکرد سیستم گیربکس یا یکی از اجزای مرتبط با آن
+                    است.
+                  </p>
+                </div>
+                <div class="article-meta">
+                  <span class="article-author">مهندس زارعی</span> |
+                  <time datetime="2026-06-19" class="article-date"
+                    >۲۹ خرداد ۱۴۰۵</time
+                  >
+                </div>
+                <a href="/" class="card-link" aria-labelledby="article-1"
+                  >مطالعه مقاله</a
+                >
+              </article>
+            </li>
+            <li>
+              <article class="card card--article">
+                <div class="card-img">
+                  <img
+                    src="assets/images/تصویر-هشدار-زرد-موتور.webp"
+                    alt="نمایش هشدار زرد موتور در کامیون های DF Euro 6"
+                  />
+                </div>
+                <h3 id="article-2" class="card-title">هشدار زرد موتور</h3>
+                <div class="card-content">
+                  <p class="article-excerpt">
+                    نمایش هشدار زرد موتور با پیام Engine Malfunction در
+                    کامیون‌های داف یورو 6 به معنای وجود اختلال در عملکرد موتور
+                    یا یکی از سیستم‌های مرتبط با مدیریت موتور است و ...
+                  </p>
+                </div>
+                <div class="article-meta">
+                  <span class="article-author">مهندس زارعی</span> |
+                  <time datetime="2026-06-19" class="article-date"
+                    >۲۹ خرداد ۱۴۰۵</time
+                  >
+                </div>
+                <a href="/" class="card-link" aria-labelledby="article-2"
+                  >مطالعه مقاله</a
+                >
+              </article>
+            </li>
+            <li>
+              <article class="card card--article">
+                <div class="card-img">
+                  <img
+                    src="assets/images/تصویر-خطایEDC-کد3778.webp"
+                    alt="نمایش خطای EDC کد 3778 در کامیون های MAN Euro 6"
+                  />
+                </div>
+                <h3 id="article-3" class="card-title">خطای EDC کد 3778</h3>
+                <div class="card-content">
+                  <p class="article-excerpt">
+                    خطای EDC 3778 در کامیون‌های MAN Euro 6 معمولاً به وجود مشکل
+                    در شیر کنترل فشار سوخت (M-Prop) روی پمپ فشار بالای سیستم
+                    کامان‌ریل اشاره دارد.
+                  </p>
+                </div>
+                <div class="article-meta">
+                  <span class="article-author">مهندس زارعی</span> |
+                  <time datetime="2026-06-19" class="article-date"
+                    >۲۹ خرداد ۱۴۰۵</time
+                  >
+                </div>
+                <a href="/" class="card-link" aria-labelledby="article-3"
+                  >مطالعه مقاله</a
+                >
+              </article>
+            </li>
+          </ul>
+        </section>
       </main>
+
+      <!-- Footer Section -->
       <footer class="footer-section">
-          <div class="footer-wrapper">
-            <ul class="footer-nav-list">
-              <li class="nav-item"><a href="#main">صفحه نخست</a></li>
-              <li class="nav-item"><a href="#services">خدمات ما</a></li>
-              <li class="nav-item"><a href="#">مقالات</a></li>
-              <li class="nav-item"><a href="#about-us">درباره ما</a></li>
-              <li class="nav-item"><a href="#">تماس با ما</a></li>
+        <div class="footer-wrapper">
+          <ul class="footer-nav-list">
+            <li class="nav-item"><a href="#main">صفحه نخست</a></li>
+            <li class="nav-item"><a href="#services">خدمات ما</a></li>
+            <li class="nav-item"><a href="#articles">مقالات</a></li>
+            <li class="nav-item"><a href="#about-us">درباره ما</a></li>
+            <li class="nav-item"><a href="/">تماس با ما</a></li>
+          </ul>
+          <div class="contact-info-wrap">
+            <ul class="contact-list">
+              <li class="contact-item">
+                <address class="address">
+                  <i class="fa-solid fa-location-crosshairs"></i>
+                  آدرس : اراک، کیلومتر ۵ جاده تهران، جنب نمایشگاه کامیون مشکانی
+                </address>
+              </li>
+              <li class="contact-item">
+                <i class="fa-solid fa-phone-flip"></i> شماره تماس مهندس زارعی:
+                <a href="tel:09184903391" class="phone-num">09184903391</a>
+              </li>
+              <li class="contact-item">
+                <i class="fa-solid fa-clock"></i>
+                ساعت کاری : از 8 صبح تا 8 شب
+              </li>
+              <li class="contact-item social">
+                ما را در شبکه های اجتماعی دنبال کنید:
+                <div class="social-icons">
+                  <a href="/"><i class="fab fa-instagram"></i></a>
+                  <a href="/"><i class="fab fa-telegram"></i></a>
+                  <a href="/"><i class="fab fa-whatsapp"></i></a>
+                </div>
+              </li>
             </ul>
-            <div class="contact-info-wrap">
-              <ul class="contact-list">
-                <li class="contact-item">
-                  <address class="address">
-                    <i class="fa-solid fa-location-crosshairs"></i>
-                     آدرس : اراک، کیلومتر ۵ جاده تهران، جنب نمایشگاه کامیون مشکانی
-                </li>
-                <li class="contact-item">
-                  <i class="fa-solid fa-phone-flip"></i> شماره تماس مهندس زارعی:
-                  <a href="tel:09184903391" class="phone-num">09184903391</a>
-                </li>
-                <li class="contact-item">
-                  <i class="fa-solid fa-clock"></i>
-                  ساعت کاری : از 8 صبح تا 8 شب
-                </li>
-                <li class="contact-item social">
-                  ما را در شبکه های اجتماعی دنبال کنید:
-                  <div class="social-icons">
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                  <a href="#"><i class="fab fa-telegram"></i></a>
-                  <a href="#"><i class="fab fa-whatsapp"></i></a>
-                  </div>
-                </li>
-                
-              </ul>
-              
-            </div>
-            <p class="slogan">دیاگ سنتر معین   |   اعتماد رانندگان گران‌قدر
-سرمایه ما</p>
-            
           </div>
-          <p class="copy-right">
-            <i class="fa-solid fa-copyright"></i>
-            تمام حقوق این وبسایت برای دیاگ سنتر معین محفوظ می باشد.
+          <p class="slogan">
+            دیاگ سنتر معین | اعتماد رانندگان گران‌قدر سرمایه ما
           </p>
-        </footer>
-        <button class="scroll-top-btn">
-         <i class="fa-solid fa-angle-up"></i>
-        </button>
+        </div>
+        <p class="copy-right">
+          <i class="fa-solid fa-copyright"></i>
+          تمام حقوق این وبسایت برای دیاگ سنتر معین محفوظ می باشد.
+        </p>
+      </footer>
+      <button class="scroll-top-btn">
+        <i class="fa-solid fa-angle-up"></i>
+      </button>
     </div>
 
     <script src="assets/scripts/script.js"></script>
