@@ -89,10 +89,6 @@ ul {
   transform: translateY(5rem);
 }
 
-#top-sentinel {
-  height: 1px;
-}
-
 /* mobile styles */
 
 /* Navbar styling */
@@ -314,7 +310,6 @@ header .navbar .logo-container .logo-text {
   flex: 1;
 }
 
-/* BUG */
 .card-content--service {
   display: flex;
   flex-direction: column;
@@ -322,8 +317,6 @@ header .navbar .logo-container .logo-text {
   padding: 0 20px;
   line-height: 30px;
   list-style-type: none;
-  /* BUG */
-  /*want to make the list items be on the one line virtically */
   text-align: right;
 }
 
@@ -523,24 +516,26 @@ p.copy-right i {
   width: 60px;
   height: 60px;
   opacity: 0;
-  visibility: hidden;
   pointer-events: none;
-  border: 3px solid var(--dark-blue);
+  border: 3px solid var(--yellow);
   border-radius: 50%;
   text-align: center;
   align-content: center;
   background: white;
-  transition: opacity 0.3s ease;
+  transform: translateY(15px);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
 }
 
 .scroll-top-btn i {
   font-size: 25px;
-  color: var(--dark-blue);
+  color: var(--yellow);
 }
 
 .scroll-top-btn.show {
   opacity: 0.8;
-  visibility: visible;
+  transform: translateY(0);
   pointer-events: auto;
 }
 
@@ -580,8 +575,8 @@ p.copy-right i {
     color: var(--black);
   }
 
-  header .navbar .nav-list .nav-item:hover,
-  header .navbar .nav-list .nav-item a:hover {
+  header .navbar .nav-list .nav-item a:hover,
+  header .navbar .nav-list .nav-item a:active {
     color: var(--yellow);
     cursor: pointer;
   }
@@ -821,7 +816,6 @@ p.copy-right i {
 /* media screen for minimum 1024xp width */
 @media screen and (min-width: 1024px) {
   /* general styls */
-
   .section-title {
     font-size: 32px;
   }
@@ -853,8 +847,8 @@ p.copy-right i {
     color: var(--black);
   }
 
-  header .navbar .nav-list .nav-item:hover,
-  header .navbar .nav-list .nav-item a:hover {
+  header .navbar .nav-list .nav-item a:hover,
+  header .navbar .nav-list .nav-item a:active {
     color: var(--yellow);
     cursor: pointer;
   }
@@ -894,6 +888,7 @@ p.copy-right i {
     align-items: center;
     justify-content: space-between;
     margin: 50px;
+    gap: 20px;
   }
 
   .hero-section .img-wrapper {
@@ -907,6 +902,7 @@ p.copy-right i {
 
   .hero-section .hero-content {
     flex: 1;
+    text-align: center;
   }
 
   .hero-section .hero-content .hero-title {
@@ -916,6 +912,8 @@ p.copy-right i {
 
   .hero-section .hero-content .hero-context {
     font-size: 18px;
+    line-height: 35px;
+    max-width: 680px;
   }
 
   .hero-section .hero-content .contact-us-btn {
@@ -993,19 +991,6 @@ p.copy-right i {
   .card-title {
     font-size: 20px;
     margin: 10px;
-  }
-
-  .card-content.card-content--service {
-    flex: 1;
-    margin-bottom: 20px;
-    gap: 15px;
-    padding: 0 10px;
-  }
-
-  .card-content.card-content--service li {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 30px;
   }
 
   .card-link {
