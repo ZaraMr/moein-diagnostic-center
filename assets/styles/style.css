@@ -74,6 +74,12 @@ ul {
   list-style-type: none;
 }
 
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
 .page-wrapper {
   position: relative;
 }
@@ -517,7 +523,7 @@ p.copy-right i {
   height: 60px;
   opacity: 0;
   pointer-events: none;
-  border: 3px solid var(--yellow);
+  border: 3px solid var(--dark-pink);
   border-radius: 50%;
   text-align: center;
   align-content: center;
@@ -530,13 +536,15 @@ p.copy-right i {
 
 .scroll-top-btn i {
   font-size: 25px;
-  color: var(--yellow);
+  color: var(--dark-pink);
 }
 
 .scroll-top-btn.show {
-  opacity: 0.8;
+  opacity: 1;
+  background: var(--white);
   transform: translateY(0);
   pointer-events: auto;
+  z-index: 5;
 }
 
 /* media screen for 768xp width */

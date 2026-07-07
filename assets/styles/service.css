@@ -1,0 +1,724 @@
+/* Navbar style */
+header .navbar .nav-list {
+  z-index: 3;
+}
+
+body.show-mobile-menu header::before {
+  z-index: 3;
+}
+
+/* Hero*/
+.service-hero {
+  height: 100vh;
+  background-image: url("/assets/images/service-imgs/hero-img.webp");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--white);
+}
+
+.service-hero .hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.45));
+}
+
+.service-hero .hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 20px;
+  animation: fadeUp 1s ease;
+}
+
+.service-hero h1 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.service-hero p {
+  font-size: 16px;
+  opacity: 0.9;
+  margin-bottom: 50px;
+  line-height: 1.8;
+  font-style: italic;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-hero .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  font-weight: 600;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.service-hero .btn i {
+  line-height: 1;
+  font-size: 0.95em;
+}
+
+.btn.primary {
+  border: 1px solid var(--yellow);
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.btn.primary:hover {
+  background: none;
+  color: var(--yellow);
+}
+
+.btn.secondary {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.btn.secondary i {
+  color: var(--yellow);
+}
+
+.btn.secondary:hover {
+  background: var(--white);
+  color: var(--yellow);
+}
+
+/* Diag services */
+.diag-services {
+  margin: 50px 20px;
+}
+
+.diag-services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-content: center;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+.diag-services-list li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  box-shadow:
+    rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 10px;
+}
+
+.icon {
+  color: var(--yellow);
+  width: 30px;
+  height: 30px;
+}
+
+.diag-services-list li h3 {
+  font-size: 16px;
+}
+
+.item-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding: 15px 10px;
+}
+
+.diag-services-list .item-content p {
+  flex-grow: 1;
+  font-size: 14px;
+}
+
+.diag-services-list li img {
+  width: 100%;
+  aspect-ratio: 16/ 10;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Why choose us */
+.why-choose-us {
+  background: linear-gradient(to bottom, #0f172a 0%, #161616 100%);
+  color: var(--white);
+  padding: 50px 20px;
+}
+
+.why-choose-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.why-choose-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 100%;
+  text-align: center;
+  padding: 30px 22px;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  transition: 0.5s ease;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.why-choose-list li:hover {
+  border-color: var(--yellow);
+}
+
+.why-choose-list li h3,
+.why-choose-list .why-choose-icon {
+  color: var(--yellow);
+}
+
+.why-choose-list .why-choose-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.why-choose-list li h3 {
+  font-size: 16px;
+}
+
+.why-choose-list li p {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* Contact us */
+.contact-us {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f7b500 0%, #ffcc33 100%);
+  padding: 80px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: auto;
+  padding: 60px 20px;
+}
+
+.contact-us::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+
+  background: url("../images/service-imgs/contact-us-bg.webp");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 90%;
+  opacity: 0.3;
+  filter: grayscale(100%) brightness(0.85);
+  mask-image: none;
+
+  z-index: 0;
+}
+
+.contact-us::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(247, 181, 0, 1) 10%,
+    rgba(247, 181, 0, 0.7) 35%,
+    rgba(247, 181, 0, 0.2) 60%,
+    rgba(247, 181, 0, 0) 100%
+  );
+
+  z-index: 1;
+}
+
+.contact-us .contact-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding-inline: 10px;
+}
+
+.contact-us .contact-content h2 {
+  font-size: 22px;
+  letter-spacing: 0.3px;
+}
+
+.contact-us .contact-content p {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-top: 16px;
+  max-width: 80%;
+}
+
+.contact-us .contact-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 280px;
+  margin-top: 28px;
+}
+
+.contact-us .contact-buttons .btn {
+  font-size: 14px;
+  border: 1px solid var(--black);
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: 8px;
+  text-align: center;
+  justify-content: center;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  background: 0.3s ease;
+  color: 0.3s ease;
+}
+
+.contact-us .contact-buttons .btn:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.contact-us .contact-buttons .btn i {
+  font-size: 16px;
+  margin-right: 4px;
+}
+
+.contact-us .contact-buttons .phone-call {
+  color: var(--black);
+}
+
+.contact-buttons .phone-call:active {
+  background: var(--dark-pink);
+  border-color: var(--dark-pink);
+  color: var(--white);
+}
+
+.contact-us .contact-buttons .whatsapp {
+  color: var(--white);
+  background: var(--black);
+}
+
+.contact-buttons .whatsapp:active {
+  background: rgb(43, 42, 42);
+  color: var(--yellow);
+  border-color: rgb(43, 42, 42);
+}
+
+/* Common questions */
+.common-questions {
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.questions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  margin: 20px auto 0;
+}
+
+.question-item {
+  border: 1px solid #e7e7e7;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.question-item.active .question-answer {
+  max-height: 300px;
+  padding: 0 20px 20px;
+  opacity: 1;
+}
+
+.question-item.active .question-icon {
+  transform: rotate(180deg);
+}
+
+.question-item.active {
+  box-shadow: inset -4px 0 0 var(--yellow);
+}
+
+.question-btn {
+  width: 100%;
+  padding: 20px 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: none;
+  border: none;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.question-title {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: right;
+  color: var(--black);
+}
+
+.question-icon {
+  color: var(--yellow);
+  font-size: 14px;
+  transition: transform 0.35s ease;
+}
+
+.question-answer {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 24px;
+  opacity: 0;
+  transition:
+    max-height 0.35s ease,
+    padding 0.35s ease,
+    opacity 0.35s ease;
+}
+
+.question-answer p {
+  line-height: 2;
+  color: #666;
+  font-size: 14px;
+}
+
+/* Animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023.99px) {
+  main {
+    margin: 0;
+  }
+
+  .diag-services-list {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  .item-content {
+    gap: 15px;
+    padding: 15px 10px;
+  }
+
+  .diag-services-list .item-content h3 {
+    margin-top: 15px;
+  }
+
+  /* Why choose us */
+  .why-choose-list {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 225px));
+    gap: 10px;
+    margin-top: 25px;
+  }
+
+  .why-choose-list li {
+    padding: 15px 15px;
+  }
+
+  /* Contact us */
+
+  .contact-us .contact-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-top: 16px;
+    max-width: 65%;
+  }
+
+  .contact-us .contact-buttons {
+    flex-direction: row;
+    width: 400px;
+  }
+
+  .contact-us .contact-buttons .btn {
+    font-size: 16px;
+  }
+
+  /* Common questions */
+  .questions-list {
+    max-width: 800px;
+  }
+  .question-btn {
+    padding: 20px 22px 15px;
+  }
+
+  .question-title {
+    font-size: 16px;
+  }
+
+  .question-icon {
+    font-size: 16px;
+  }
+
+  .question-answer p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* Hero*/
+  .service-hero {
+    height: 500px;
+  }
+
+  .service-hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+  }
+
+  .service-hero p {
+    font-size: 18px;
+    margin-bottom: 42px;
+  }
+
+  .service-hero .btn {
+    padding: 12px 22px;
+  }
+
+  /* Diag  */
+  .diag-services {
+    margin: 50px 20px;
+  }
+
+  .diag-services-list {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    margin-top: 25px;
+  }
+  .icon {
+    color: var(--yellow);
+    width: 35px;
+    height: 35px;
+  }
+
+  .diag-services-list .item-content h3 {
+    font-size: 20px;
+  }
+
+  .diag-services-list .item-content p {
+    font-size: 16px;
+  }
+
+  .diag-services-list li img {
+    width: 100%;
+    aspect-ratio: 12 / 5;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  /* Why choose us */
+  .why-choose-us {
+    background: linear-gradient(to bottom, #0f172a 0%, #161616 100%);
+    color: var(--white);
+    padding: 80px 20px;
+  }
+
+  .why-choose-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    justify-content: center;
+    gap: 10px;
+    margin-top: 25px;
+  }
+
+  .why-choose-list li {
+    gap: 10px;
+    padding: 32px 24px;
+    align-items: center;
+  }
+
+  .why-choose-list li:hover {
+    border-color: var(--yellow);
+  }
+
+  .why-choose-list li h3,
+  .why-choose-list .why-choose-icon {
+    color: var(--yellow);
+  }
+
+  .why-choose-list .why-choose-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .why-choose-list li h3 {
+    font-size: 18px;
+  }
+
+  .why-choose-list li p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  /* Contact us */
+  .contact-us {
+    padding: 80px 50px;
+    min-height: 340px;
+  }
+
+  .contact-us::before {
+    width: 55%;
+    background-position: right center;
+    background-size: cover;
+    opacity: 0.6;
+    filter: grayscale(100%) contrast(1.1) brightness(1.05);
+    mask-image: linear-gradient(to left, black 60%, transparent);
+  }
+
+  .contact-us .contact-content {
+    align-items: flex-start;
+    text-align: right;
+    width: min(480px, 45%);
+    margin-right: auto;
+  }
+
+  .contact-us .contact-content h2 {
+    font-size: 32px;
+    letter-spacing: 0.3px;
+  }
+
+  .contact-us .contact-content p {
+    font-size: 18px;
+    line-height: 1.9;
+    margin-top: 16px;
+  }
+
+  .contact-us .contact-buttons {
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 28px;
+  }
+
+  .contact-us .contact-buttons .btn {
+    font-size: 16px;
+    padding: 15px 32px;
+    margin-top: 20px;
+  }
+
+  .contact-us .contact-buttons .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
+  }
+
+  .contact-us .contact-buttons .btn i {
+    font-size: 20px;
+    margin-right: 5px;
+  }
+
+  .contact-us .contact-buttons .phone-call {
+    min-width: 220px;
+  }
+
+  .contact-us .contact-buttons .whatsapp {
+    min-width: 170px;
+  }
+
+  /* Common questions */
+  .common-questions {
+    padding: 80px 20px;
+  }
+
+  .questions-list {
+    gap: 10px;
+    max-width: 900px;
+    margin: 40px auto 0;
+  }
+
+  .question-item {
+    border-radius: 12px;
+  }
+
+  .question-item.active .question-answer {
+    max-height: 300px;
+    padding: 16px 24px 22px;
+  }
+
+  .question-btn {
+    padding: 22px 24px;
+  }
+
+  .question-title {
+    font-size: 18px;
+  }
+
+  .question-icon {
+    font-size: 18px;
+  }
+
+  .question-answer {
+    max-height: 0;
+    padding: 0 24px;
+  }
+
+  .question-answer p {
+    line-height: 2;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .diag-services-list {
+    margin: 50px auto;
+    grid-template-columns: repeat(4, 320px);
+  }
+
+  /* Why choose us */
+  .why-choose-list {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    justify-content: center;
+    gap: 24px;
+    margin-top: 25px;
+  }
+
+  /* Contact us */
+  .contact-us .contact-content {
+    align-items: flex-start;
+    text-align: right;
+    width: min(480px, 45%);
+    margin-right: auto;
+    margin-left: 6%;
+  }
+}
