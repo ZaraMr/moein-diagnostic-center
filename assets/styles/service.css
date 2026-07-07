@@ -10,7 +10,7 @@ body.show-mobile-menu header::before {
 /* Hero*/
 .service-hero {
   height: 100vh;
-  background-image: url("/assets/images/service-imgs/hero-img.webp");
+  background-image: url("../images/service-imgs/hero-img.webp");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
