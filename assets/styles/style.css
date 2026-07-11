@@ -368,7 +368,7 @@ header .navbar .logo-container .logo-text {
 .section-title {
   width: 100%;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 15px;
 }
 
@@ -517,10 +517,10 @@ p.copy-right i {
 
 .scroll-top-btn {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 60px;
-  height: 60px;
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
   opacity: 0;
   pointer-events: none;
   border: 3px solid var(--dark-pink);
@@ -535,13 +535,13 @@ p.copy-right i {
 }
 
 .scroll-top-btn i {
-  font-size: 25px;
+  font-size: 20px;
   color: var(--dark-pink);
 }
 
 .scroll-top-btn.show {
   opacity: 1;
-  background: var(--white);
+  background: none;
   transform: translateY(0);
   pointer-events: auto;
   z-index: 5;
@@ -595,7 +595,7 @@ p.copy-right i {
 
   header .navbar .nav-list .nav-item i {
     font-size: 12px;
-    margin-left: 3px;
+    margin-left: 2px;
   }
 
   header .navbar .nav-list .nav-item .menu-exit {
@@ -867,7 +867,7 @@ p.copy-right i {
 
   header .navbar .nav-list .nav-item i {
     font-size: 15px;
-    margin-left: 5px;
+    margin-left: 3px;
   }
 
   header .navbar .nav-list .nav-item .menu-exit {
@@ -1122,6 +1122,17 @@ p.copy-right i {
 
   p.copy-right i {
     font-size: 12px;
+  }
+
+  .scroll-top-btn {
+    bottom: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .scroll-top-btn i {
+    font-size: 23px;
   }
 }
 
