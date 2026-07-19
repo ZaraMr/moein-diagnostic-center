@@ -2,16 +2,19 @@
   font-family: "vazir";
   src: url("../fonts/Vazirmatn-Regular.woff2") format("woff2");
   font-weight: 400;
+  font-display: swap;
 }
 @font-face {
   font-family: "vazir";
   src: url("../fonts/Vazirmatn-Bold.woff2") format("woff2");
   font-weight: 700;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "lalehzar";
   src: url("../fonts/Lalezar-Regular.woff2") format("woff2");
+  font-display: swap;
 }
 
 /* CSS variables */
@@ -104,13 +107,15 @@ header .navbar {
   align-items: center;
   justify-content: space-between;
   background-color: var(--white);
-  padding: 10px 15px;
+  padding: 5px 10px;
 }
 
-header .navbar .menu-btn i {
-  font-size: 22px;
+header .navbar .menu-btn .menu-icon {
+  width: 25px;
+  height: 25px;
   transition: 0.3s ease;
   color: var(--yellow);
+  vertical-align: middle;
 }
 
 header .navbar .nav-list {
@@ -134,21 +139,29 @@ body.show-mobile-menu .navbar .nav-list {
   right: 0;
 }
 
-header .navbar .nav-list .menu-exit i {
+header .navbar .nav-list .menu-exit .close-menu-icon {
   position: absolute;
   top: 15px;
   right: 15px;
-  font-size: 20px;
+  width: 25px;
+  height: 25px;
 }
 
-header .navbar .nav-list .menu-exit i:hover,
-header .navbar .nav-list .menu-exit i:active {
+header .navbar .nav-list .menu-exit .close-menu-icon:hover,
+header .navbar .nav-list .menu-exit .close-menu-icon:active {
   color: red;
 }
 
-header .navbar .nav-list i {
-  margin-left: 10px;
-  font-size: 14px;
+header .navbar .nav-list .header-nav-link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
+
+header .navbar .nav-list .nav-icon {
+  width: 16px;
+  height: 16px;
   transition: 0.3s ease;
 }
 
@@ -189,6 +202,7 @@ header .navbar .logo-container .logo-text {
 
 .hero-section .img-wrapper img {
   width: 100%;
+  height: auto;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   filter: grayscale(20%);
@@ -246,6 +260,7 @@ header .navbar .logo-container .logo-text {
 
 .about-section .img-container img {
   width: 68%;
+  height: auto;
   border: 3px solid var(--yellow);
   padding: 5px;
   border-radius: 50%;
@@ -301,6 +316,7 @@ header .navbar .logo-container .logo-text {
 
 .card-img img {
   width: 100%;
+  height: auto;
   filter: grayscale(30%);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -466,9 +482,10 @@ footer.footer-section {
   font-size: 12px;
 }
 
-.footer-section .footer-wrapper .contact-list i {
+.footer-section .footer-wrapper .contact-list .footer-contact-icon {
   color: var(--dark-pink);
-  font-size: 10px;
+  width: 14px;
+  height: 14px;
   margin-left: 5px;
 }
 
@@ -494,8 +511,10 @@ footer.footer-section {
   gap: 10px;
 }
 
-.footer-section .footer-wrapper .social i {
-  font-size: 16px;
+.footer-section .footer-wrapper .social .footer-social-icon {
+  width: 16px;
+  height: 16px;
+  fill: var(--dark-pink);
   margin-right: 8px;
 }
 
@@ -510,9 +529,12 @@ p.copy-right {
   text-align: center;
   font-size: 10px;
   color: var(--dark-pink);
+  padding-bottom: 10px;
 }
-p.copy-right i {
-  font-size: 8px;
+p.copy-right .copy-right-icon {
+  width: 8px;
+  height: 8px;
+  vertical-align: middle;
 }
 
 .scroll-top-btn {
@@ -523,7 +545,7 @@ p.copy-right i {
   height: 50px;
   opacity: 0;
   pointer-events: none;
-  border: 3px solid var(--dark-pink);
+  border: 2px solid var(--dark-pink);
   border-radius: 50%;
   text-align: center;
   align-content: center;
@@ -534,8 +556,9 @@ p.copy-right i {
     transform 0.3s ease;
 }
 
-.scroll-top-btn i {
-  font-size: 20px;
+.scroll-top-btn .scroll-top-icon {
+  width: 24px;
+  height: 24px;
   color: var(--dark-pink);
 }
 
@@ -767,7 +790,7 @@ p.copy-right i {
   }
 
   .footer-section .footer-wrapper .footer-nav-list a {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
   }
 
@@ -776,15 +799,18 @@ p.copy-right i {
   }
 
   .footer-section .footer-wrapper .contact-list li {
-    font-size: 15px;
-  }
-
-  .footer-section .footer-wrapper .contact-list i {
     font-size: 14px;
   }
 
+  .footer-section .footer-wrapper .contact-list .footer-contact-icon {
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    margin-left: 2px;
+  }
+
   .footer-section .footer-wrapper .contact-list .phone-num {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     padding-right: 10px;
   }
@@ -796,8 +822,7 @@ p.copy-right i {
     gap: 20px;
   }
 
-  .footer-section .footer-wrapper .social i {
-    font-size: 18px;
+  .footer-section .footer-wrapper .social .footer-social-icon {
     transition: 0.3s ease;
   }
 
@@ -813,11 +838,12 @@ p.copy-right i {
 
   p.copy-right {
     font-size: 14px;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
   }
 
-  p.copy-right i {
-    font-size: 12px;
+  p.copy-right .copy-right-icon {
+    width: 8px;
+    height: 8px;
   }
 }
 
@@ -825,7 +851,7 @@ p.copy-right i {
 @media screen and (min-width: 1024px) {
   /* general styls */
   .section-title {
-    font-size: 32px;
+    font-size: 24px;
   }
 
   /* header section styling */
@@ -862,7 +888,7 @@ p.copy-right i {
   }
 
   header .navbar .nav-list .nav-item a {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   header .navbar .nav-list .nav-item i {
@@ -1083,8 +1109,11 @@ p.copy-right i {
     line-height: 30px;
   }
 
-  .footer-section .footer-wrapper .contact-list i {
-    font-size: 14px;
+  .footer-section .footer-wrapper .contact-list .footer-contact-icon {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin-left: 5px;
   }
 
   .footer-section .footer-wrapper .contact-list .phone-num {
@@ -1096,13 +1125,20 @@ p.copy-right i {
   .footer-section .footer-wrapper .social {
     display: flex;
     align-items: center;
+    vertical-align: middle;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
   }
 
-  .footer-section .footer-wrapper .social i {
-    font-size: 22px;
-    transition: 0.3s ease;
+  .footer-section .footer-wrapper .social-icons {
+    display: flex;
+    gap: 15px;
+    vertical-align: middle;
+  }
+
+  .footer-section .footer-wrapper .social .footer-social-icon {
+    width: 18px;
+    height: 18px;
   }
 
   .footer-section .footer-wrapper .contact-list .phone-num:hover,
@@ -1117,11 +1153,12 @@ p.copy-right i {
 
   p.copy-right {
     font-size: 14px;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
   }
 
-  p.copy-right i {
-    font-size: 12px;
+  p.copy-right .copy-right-icon {
+    width: 14px;
+    height: 14px;
   }
 
   .scroll-top-btn {
@@ -1131,8 +1168,9 @@ p.copy-right i {
     height: 60px;
   }
 
-  .scroll-top-btn i {
-    font-size: 23px;
+  .scroll-top-btn .scroll-top-icon {
+    width: 28px;
+    height: 28px;
   }
 }
 

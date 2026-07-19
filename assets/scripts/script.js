@@ -2,7 +2,7 @@
 
 // variables
 const body = document.body;
-const menuBtn = document.querySelector(".menu-btn");
+const menuBtn = document.querySelector(".menu-icon");
 const menuExitBtn = document.querySelector(".menu-exit");
 const mobileNav = document.querySelector(".nav-list");
 const sections = document.querySelectorAll(".section");
