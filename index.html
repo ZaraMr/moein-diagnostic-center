@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="دیاگ سنتر معین در اراک، ارائه‌دهنده خدمات تخصصی دیاگ و برق خودرو، عیب‌یابی کامیون داف و خودروهای سنگین با تجهیزات پیشرفته."
+      content="دیاگ سنتر معین در اراک؛ خدمات تخصصی دیاگ، برق خودرو، برنامه‌ریزی ECU، کالیبراسیون و عیب‌یابی کامیون‌های داف، مان و خودروهای سنگین."
     />
+    <meta name="theme-color" content="#073451" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <!-- <link rel="manifest" href="/site.webmanifest" /> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
     <link
       rel="preload"
       href="assets/fonts/Vazirmatn-Regular.woff2"
@@ -26,622 +26,518 @@
       type="font/woff2"
       crossorigin
     />
+    <link
+      rel="preload"
+      href="assets/images/کامیون داف 4-700.webp"
+      as="image"
+      type="image/webp"
+    />
     <link rel="stylesheet" href="assets/styles/style.css" />
-    <title>دیاگ سنتر معین اراک | خدمات تخصصی برق و دیاگ</title>
+    <link rel="stylesheet" href="assets/styles/home.css" />
+    <title>دیاگ سنتر معین اراک | دیاگ و برق تخصصی خودرو سنگین</title>
   </head>
-  <body>
+
+  <body class="home-page">
     <div id="main" class="page-wrapper">
-      <!-- Header / Navbar -->
-      <header class="header">
-        <nav aria-label="منوی اصلی" class="navbar">
-          <button class="menu-btn" aria-label="باز کردن منو">
-            <!-- <i class="fa-solid fa-bars"></i> -->
+      <header class="header home-header">
+        <nav aria-label="منوی اصلی" class="navbar home-navbar">
+          <button
+            class="menu-btn"
+            type="button"
+            aria-label="باز کردن منو"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+          >
             <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
+              aria-hidden="true"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
               stroke-width="2"
               stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-menu-icon lucide-menu menu-icon"
+              class="menu-icon"
             >
-              <path d="M4 5h16" />
-              <path d="M4 12h16" />
-              <path d="M4 19h16" />
+              <path d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
-          <ul class="nav-list">
-            <li class="nav-item">
-              <button class="menu-exit" aria-label="بستن منو">
-                <!-- <i class="fa-solid fa-circle-xmark"></i> -->
+
+          <ul id="primary-navigation" class="nav-list">
+            <li class="nav-item nav-close-item">
+              <button class="menu-exit" type="button" aria-label="بستن منو">
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
+                  aria-hidden="true"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
                   stroke-width="2"
                   stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-x-icon lucide-x close-menu-icon"
+                  class="close-menu-icon"
                 >
-                  <path d="M18 6 6 18" />
-                  <path d="m6 6 12 12" />
+                  <path d="M18 6 6 18M6 6l12 12" />
                 </svg>
               </button>
             </li>
             <li class="nav-item home">
-              <a href="#main" class="header-nav-link">
-                <!-- <i class="fa-solid fa-house"></i> -->
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-house-icon lucide-house nav-icon"
-                >
-                  <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
-                  <path
-                    d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
-                  />
-                </svg>
-                صفحه نخست</a
-              >
+              <a href="#main" class="header-nav-link">صفحه نخست</a>
             </li>
             <li class="nav-item">
-              <a href="#services" class="header-nav-link">
-                <!-- <i class="fa-solid fa-wrench"></i> -->
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-wrench-icon lucide-wrench nav-icon"
-                >
-                  <path
-                    d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"
-                  />
-                </svg>
-                خدمات ما</a
-              >
+              <a href="#services" class="header-nav-link">خدمات ما</a>
             </li>
             <li class="nav-item">
-              <a href="#articles" class="header-nav-link">
-                <!-- <i class="fa-solid fa-file-lines"></i> -->
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-file-text-icon lucide-file-text nav-icon"
-                >
-                  <path
-                    d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"
-                  />
-                  <path d="M14 2v5a1 1 0 0 0 1 1h5" />
-                  <path d="M10 9H8" />
-                  <path d="M16 13H8" />
-                  <path d="M16 17H8" />
-                </svg>
-                مقالات
-              </a>
+              <a href="#articles" class="header-nav-link">آموزش‌ها</a>
             </li>
             <li class="nav-item">
-              <a href="#about-us" class="header-nav-link">
-                <!-- <i class="fa-solid fa-circle-info"></i> -->
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-info-icon lucide-info nav-icon"
-                >
-                  <circle cx="12" cy="12" r="10" />
-                  <path d="M12 16v-4" />
-                  <path d="M12 8h.01" />
-                </svg>
-                درباره ما
-              </a>
+              <a href="#about-us" class="header-nav-link">درباره ما</a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="header-nav-link">
-                <!-- <i class="fa-solid fa-phone-flip"></i> -->
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-phone-icon lucide-phone nav-icon"
-                >
-                  <path
-                    d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"
-                  />
-                </svg>
-                تماس با ما</a
-              >
+            <li class="nav-item nav-contact-item">
+              <a href="#contact" class="header-nav-link">تماس با ما</a>
             </li>
           </ul>
-          <div class="logo-container">
-            <a href="/" aria-label="برگشت به صفحه اصلی">
-              <p class="logo-text">دیاگ سنتر معین</p>
 
+          <div class="logo-container">
+            <a href="#main" aria-label="برگشت به ابتدای صفحه">
               <img
                 src="logo_240-2.webp"
-                alt="لوگو دیاگ سنتر معین اراک"
-                width="60"
-                height="60"
+                alt="لوگوی دیاگ سنتر معین"
+                width="56"
+                height="56"
                 class="logo-img"
               />
+              <span class="logo-copy">
+                <strong class="logo-text">دیاگ سنتر معین</strong>
+                <small>تخصصی خودروهای سنگین</small>
+              </span>
+              <!-- <img
+                src="logo_240-2.webp"
+                alt="لوگوی دیاگ سنتر معین"
+                width="56"
+                height="56"
+                class="logo-img"
+              /> -->
             </a>
           </div>
         </nav>
       </header>
+
       <main>
-        <!-- Hero Section -->
-        <section class="hero-section section">
-          <div class="img-wrapper">
+        <section class="home-hero" aria-labelledby="hero-title">
+          <div class="hero-media" aria-hidden="true">
             <img
               src="assets/images/کامیون داف 4-700.webp"
-              alt="تعمیر و دیاگ کامیون داف در دیاگ سنتر معین اراک"
+              alt=""
               width="700"
               height="525"
               fetchpriority="high"
             />
           </div>
-          <div class="hero-content">
-            <h1 class="hero-title">دیاگ سنتر معین در اراک</h1>
-            <!-- <p class="hero-context">
-              دیاگ سنتر معین با سال ها تجربه در عیب یابی و تعمیرات تخصصی خودرو
-              های سنگین.
-            </p> -->
-            <p class="hero-context">
-              دیاگ سنتر معین در اراک ارائه دهنده خدمات تخصصی دیاگ، عیب‌یابی، برق
-              خودرو و برنامه‌ریزی ECU کامیون‌های داف، مان و سایر خودروهای سنگین
-              است.
-            </p>
+          <div class="hero-overlay"></div>
+          <div class="home-container hero-inner">
+            <div class="hero-content">
+              <span class="hero-kicker">عیب‌یابی دقیق، تعمیر مطمئن</span>
+              <h1 id="hero-title" class="hero-title">
+                مرکز تخصصی دیاگ و برق کامیون در اراک
+              </h1>
+              <p class="hero-context">
+                تشخیص اصولی ایراد، برنامه‌ریزی ECU و خدمات تخصصی خودروهای سنگین
+                با تجهیزات به‌روز
+              </p>
+              <div class="hero-actions">
+                <a
+                  href="tel:09184903391"
+                  class="home-btn home-btn--primary"
+                  aria-label="تماس فوری با دیاگ سنتر معین"
+                >
+                  <svg aria-hidden="true" viewBox="0 0 24 24">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.69 2.8a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.84.56 2.8.69A2 2 0 0 1 22 16.92z"
+                    />
+                  </svg>
+                  تماس فوری
+                </a>
+                <a href="#services" class="home-btn home-btn--outline">
+                  مشاهده خدمات
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="home-container trust-wrap">
+          <section class="trust-strip" aria-label="مزیت‌های کلیدی مجموعه">
+            <div class="trust-item">
+              <strong>تخصصی</strong>
+              <span>داف و مان</span>
+            </div>
+            <div class="trust-item">
+              <strong>دقیق</strong>
+              <span>عیب‌یابی اصولی</span>
+            </div>
+            <div class="trust-item">
+              <strong>سریع</strong>
+              <span>پاسخ‌گویی مستقیم</span>
+            </div>
+          </section>
+        </div>
+
+        <section id="services" class="home-section section home-services">
+          <div class="home-container">
+            <div class="home-section-heading">
+              <div>
+                <h2>خدمات تخصصی ما</h2>
+                <span class="heading-mark" aria-hidden="true"></span>
+              </div>
+              <a href="services/service.html" class="section-link">
+                همه خدمات
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="m15 18-6-6 6-6" />
+                </svg>
+              </a>
+            </div>
+
+            <div class="home-services-grid">
+              <a
+                href="services/service.html"
+                class="home-service-card"
+                aria-label="مشاهده جزئیات خدمت دیاگ و عیب‌یابی"
+              >
+                <span class="home-card-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <rect x="3" y="4" width="18" height="16" rx="2" />
+                    <path d="M7 8h10M7 12h6M7 16h4" />
+                  </svg>
+                </span>
+                <h3>دیاگ و عیب‌یابی</h3>
+                <p>تشخیص دقیق خطاهای موتور، گیربکس و سیستم‌های الکترونیکی</p>
+                <span class="service-card-cta">
+                  مشاهده جزئیات
+                  <svg aria-hidden="true" viewBox="0 0 24 24">
+                    <path d="m15 18-6-6 6-6" />
+                  </svg>
+                </span>
+              </a>
+
+              <a
+                href="services/electrical.html"
+                class="home-service-card"
+                aria-label="مشاهده جزئیات خدمت برق و الکترونیک"
+              >
+                <span class="home-card-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M8 2v4M16 2v4M5 8h14v11H5zM9 12h6M9 16h4" />
+                  </svg>
+                </span>
+                <h3>برق و الکترونیک</h3>
+                <p>سیم‌کشی، سنسورها و رفع مشکلات برقی خودروهای سنگین</p>
+                <span class="service-card-cta">
+                  مشاهده جزئیات
+                  <svg aria-hidden="true" viewBox="0 0 24 24">
+                    <path d="m15 18-6-6 6-6" />
+                  </svg>
+                </span>
+              </a>
+
+              <a
+                href="services/ecu-calibration.html"
+                class="home-service-card"
+                aria-label="مشاهده جزئیات خدمت کالیبراسیون و ECU"
+              >
+                <span class="home-card-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <rect x="5" y="5" width="14" height="14" rx="2" />
+                    <path
+                      d="M9 9h6v6H9zM9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"
+                    />
+                  </svg>
+                </span>
+                <h3>کالیبراسیون و ECU</h3>
+                <p>تنظیمات تخصصی، کالیبراسیون و برنامه‌ریزی کنترل یونیت‌ها</p>
+                <span class="service-card-cta">
+                  مشاهده جزئیات
+                  <svg aria-hidden="true" viewBox="0 0 24 24">
+                    <path d="m15 18-6-6 6-6" />
+                  </svg>
+                </span>
+              </a>
+
+              <a
+                href="services/adblue.html"
+                class="home-service-card"
+                aria-label="مشاهده جزئیات خدمات AdBlue"
+              >
+                <span class="home-card-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M12 3c4 5 6 8 6 11a6 6 0 0 1-12 0c0-3 2-6 6-11zM9 17l6-6"
+                    />
+                  </svg>
+                </span>
+                <h3>خدمات AdBlue</h3>
+                <p>بررسی و رفع تخصصی خطاهای سیستم ادبلو با برنامه اصولی</p>
+                <span class="service-card-cta">
+                  مشاهده جزئیات
+                  <svg aria-hidden="true" viewBox="0 0 24 24">
+                    <path d="m15 18-6-6 6-6" />
+                  </svg>
+                </span>
+              </a>
+            </div>
 
             <a
-              href="tel:09184903391"
-              class="contact-us-btn btn"
-              aria-label="تماس با دیاگ سنتر معین"
-              >تماس فوری</a
+              href="services/service.html"
+              class="home-btn services-mobile-link"
             >
+              مشاهده جزئیات خدمات
+            </a>
           </div>
         </section>
 
-        <!-- About Section -->
-        <section id="about-us" class="about-section section">
-          <div class="about-wrapper">
-            <div class="img-container">
+        <section
+          id="about-us"
+          class="about-band section"
+          aria-labelledby="about-title"
+        >
+          <div class="home-container about-layout">
+            <div class="about-media">
               <img
-                src="assets/images/کامیون-داف-2.webp"
-                alt="کامیون داف زرد"
-                width="1024"
+                src="assets/images/service-imgs/hero-img.webp"
+                alt="عیب‌یابی تخصصی کامیون داف با دستگاه دیاگ"
+                width="1536"
                 height="1024"
+                loading="lazy"
               />
             </div>
-            <div class="about-content">
-              <h2 class="section-title">درباره ما</h2>
-              <p class="about-context">
-                من مهندس زارعی، با سال ها تجربه عملی و دانش روز در حوزه برق و
-                دیاگ خودروهای سنگین، به ویژه کامیون های مان و داف، آماده ارائه
-                خدمات تخصصی و مطمئن به شما رانندگان و صاحبان محترم خودروهای
-                سنگین هستم.در دیاگ سنتر معین کیفیت کار، دقت و رضایت شما اولویت
-                اصلی ماست.
+            <div class="about-copy">
+              <span class="about-kicker">درباره مجموعه</span>
+              <h2 id="about-title">تجربه‌ای که پشت هر تشخیص ایستاده</h2>
+              <p>
+                من مهندس زارعی هستم. در دیاگ سنتر معین هدف ما پیدا کردن علت اصلی
+                ایراد است؛ نه تعویض قطعه با حدس و آزمون. کیفیت کار، دقت و رضایت
+                شما اولویت اصلی ماست.
               </p>
-              <a href="#" class="about-us-desktop-btn btn">بیشتر</a>
+              <ul class="about-points">
+                <li>تشخیص دقیق پیش از شروع تعمیر</li>
+                <li>تمرکز تخصصی روی کامیون‌های داف و مان</li>
+              </ul>
             </div>
           </div>
-          <a href="#" class="about-us-btn btn">درباره ما</a>
-        </section>
-        <!-- Services Section -->
-        <section id="services" class="services-section section">
-          <h2 class="section-title">خدمات ما</h2>
-          <ul class="services-list">
-            <li>
-              <article class="card card--service">
-                <div class="card-img">
-                  <img
-                    src="assets/images/کامیون-داف-5.webp"
-                    alt="دیاگ و عیب‌یابی تخصصی کامیون‌های سنگین با دستگاه پیشرفته در اراک"
-                    width="1200"
-                    height="800"
-                  />
-                </div>
-                <h3 id="service-1" class="card-title">دیاگ و عیب یابی</h3>
-                <ul class="card-content card-content--service">
-                  <li>عیب یابی تخصصی با دستگاه های اصلی و به روز</li>
-                  <li>
-                    دیاگ و ریمپ خودروهای سنگین چینی از جمله : فورس، یوجین، جک،
-                    دایون، فوتون، دیما، شاکمان، و...
-                  </li>
-                  <li>قطع ادبلو با برنامه اصلی و بدون خطا</li>
-                  <li>کارشناسی فنی و تشخیص دقیق مشکلات</li>
-                </ul>
-                <a
-                  href="services/service.html"
-                  class="card-link"
-                  aria-labelledby="service-1"
-                  >مشاهده خدمات</a
-                >
-              </article>
-            </li>
-            <li>
-              <article class="card card--service">
-                <div class="card-img">
-                  <img
-                    src="assets/images/کامیون-داف-5.webp"
-                    alt="کالیبراسیون و تنظیمات حرفه‌ای سیستم‌های الکترونیکی کامیون با دستگاه های تخصصی"
-                    width="1200"
-                    height="800"
-                  />
-                </div>
-                <h3 id="service-2" class="card-title">
-                  کالیبراسیون و تنظیمات حرفه ای
-                </h3>
-                <ul class="card-content card-content--service">
-                  <li>کالیبره انواع ECU (کنترل کننده های الکترونیکی)</li>
-                  <li>کالیبره گیربکس های ZF و ترکسون</li>
-                  <li>کالیبره VGT (توربوهای متعیر)</li>
-                  <li>کالیبره AEBS (سیستم ترمز اضطراری)</li>
-                  <li>تنظیم ارتفاع و تنظیم ترمز</li>
-                  <li>سرویس درب گیربکس</li>
-                </ul>
-                <a href="#" class="card-link" aria-labelledby="service-2"
-                  >مشاهده خدمات</a
-                >
-              </article>
-            </li>
-            <li>
-              <article class="card card--service">
-                <div class="card-img">
-                  <img
-                    src="assets/images/کامیون-داف-5.webp"
-                    alt="خدمات برق و الکترونیک کامیون شامل سیم‌کشی تخصصی، تعمیر کامل برق و رفع مشکلات سیستم‌های الکترونیکی"
-                    width="1200"
-                    height="800"
-                  />
-                </div>
-                <h3 id="service-3" class="card-title">خدمات برق و الکترونیک</h3>
-                <ul class="card-content card-content--service">
-                  <li>سیم‌کشی تخصصی خودروهای سنگین</li>
-                  <li>تعمیرات کامل برق خودرو</li>
-                  <li>رفع مشکلات مربوط به سیستم‌های الکترونیکی</li>
-                </ul>
-                <a href="#" class="card-link" aria-labelledby="service-3"
-                  >مشاهده خدمات</a
-                >
-              </article>
-            </li>
-            <li>
-              <article class="card card--service">
-                <div class="card-img">
-                  <img
-                    src="assets/images/کامیون-داف-5.webp"
-                    alt="برنامه‌ریزی و بهینه‌سازی عملکرد کامیون برای افزایش توان و بهبود راندمان"
-                    width="1200"
-                    height="800"
-                  />
-                </div>
-                <h3 id="service-4" class="card-title">
-                  برنامه‌ریزی و بهینه‌سازی (ریمپ)
-                </h3>
-                <ul class="card-content card-content--service">
-                  <li>باز کردن محدودیت سرعت</li>
-                  <li>افزایش توان و گشتاور موتور</li>
-                  <li>کاهش دمای آب و بهبود عملکرد خنک‌ کنندگی</li>
-                  <li>تنظیمات سفارشی برای عملکرد بهتر خودرو</li>
-                </ul>
-                <a href="#" class="card-link" aria-labelledby="service-4"
-                  >مشاهده خدمات</a
-                >
-              </article>
-            </li>
-          </ul>
         </section>
 
-        <section id="articles" class="articles-section section">
-          <h2 class="section-title">مقالات</h2>
+        <section
+          class="home-section section reasons-section"
+          aria-labelledby="reasons-title"
+        >
+          <div class="home-container">
+            <div class="home-section-heading home-section-heading--simple">
+              <div>
+                <h2 id="reasons-title">چرا دیاگ سنتر معین؟</h2>
+                <span class="heading-mark" aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="reasons-grid">
+              <article class="reason-card">
+                <span class="reason-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="m5 12 4 4L19 6" /></svg>
+                </span>
+                <h3>تجهیزات به‌روز</h3>
+                <p>دستگاه‌های تخصصی برندهای سنگین</p>
+              </article>
+              <article class="reason-card">
+                <span class="reason-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="m5 12 4 4L19 6" /></svg>
+                </span>
+                <h3>تشخیص شفاف</h3>
+                <p>توضیح ایراد پیش از شروع تعمیر</p>
+              </article>
+              <article class="reason-card">
+                <span class="reason-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="m5 12 4 4L19 6" /></svg>
+                </span>
+                <h3>تمرکز تخصصی</h3>
+                <p>خدمات ویژه کامیون‌های داف و مان</p>
+              </article>
+              <article class="reason-card">
+                <span class="reason-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="m5 12 4 4L19 6" /></svg>
+                </span>
+                <h3>پشتیبانی سریع</h3>
+                <p>هماهنگی آسان و مستقیم با متخصص</p>
+              </article>
+            </div>
+          </div>
+        </section>
 
-          <ul class="articles-list">
-            <li>
-              <article class="card card--article">
-                <div class="card-img">
-                  <img
-                    src="assets/images/تصویر-هشدار-زرد-گیربکس.webp"
-                    alt="نمایش هشدار زرد گیربکس در کامیون های DAF Euro 6"
-                    width="1280"
-                    height="799"
-                  />
+        <section
+          id="articles"
+          class="home-section section articles-section-home"
+          aria-labelledby="articles-title"
+        >
+          <div class="home-container">
+            <div class="home-section-heading">
+              <div>
+                <h2 id="articles-title">آخرین آموزش‌ها</h2>
+                <span class="heading-mark" aria-hidden="true"></span>
+              </div>
+              <span class="section-note">تجربه‌های کاربردی برای رانندگان</span>
+            </div>
+
+            <div class="home-articles-grid">
+              <article class="home-article-card">
+                <img
+                  src="assets/images/تصویر-خطایEDC-کد3778.webp"
+                  alt="نمایش خطای EDC کد 3778 در کامیون مان یورو 6"
+                  width="1448"
+                  height="1086"
+                  loading="lazy"
+                />
+                <div class="home-article-copy">
+                  <span class="article-tag">موتور و سوخت</span>
+                  <h3>خطای EDC 3778 چیست؟</h3>
+                  <p>نشانه‌ها، علت‌های رایج و زمان مراجعه برای بررسی تخصصی</p>
+                  <div class="article-meta-home">
+                    <span>مهندس زارعی</span>
+                    <time datetime="2026-06-19">۲۹ خرداد ۱۴۰۵</time>
+                  </div>
                 </div>
-                <h3 id="article-1" class="card-title">هشدار زرد گیربکس</h3>
-                <div class="card-content">
-                  <p class="article-excerpt">
-                    نمایش هشدار زرد گیربکس با پیام Transmission Malfunction در
-                    کامیون‌های داف یورو 6 مجهز به گیربکس TraXon، به معنای وجود
-                    اختلال در عملکرد سیستم گیربکس یا یکی از اجزای مرتبط با آن
-                    است.
-                  </p>
-                </div>
-                <div class="article-meta">
-                  <span class="article-author">مهندس زارعی</span> |
-                  <time datetime="2026-06-19" class="article-date"
-                    >۲۹ خرداد ۱۴۰۵</time
-                  >
-                </div>
-                <a href="#" class="card-link" aria-labelledby="article-1"
-                  >مطالعه مقاله</a
-                >
               </article>
-            </li>
-            <li>
-              <article class="card card--article">
-                <div class="card-img">
-                  <img
-                    src="assets/images/هشدار-زرد-موتور-450.webp"
-                    alt="نمایش هشدار زرد موتور در کامیون های DF Euro 6"
-                    width="450"
-                    height="600"
-                  />
-                </div>
-                <h3 id="article-2" class="card-title">هشدار زرد موتور</h3>
-                <div class="card-content">
-                  <p class="article-excerpt">
-                    نمایش هشدار زرد موتور با پیام Engine Malfunction در
-                    کامیون‌های داف یورو 6 به معنای وجود اختلال در عملکرد موتور
-                    یا یکی از سیستم‌های مرتبط با مدیریت موتور است و ...
+
+              <article class="home-article-card">
+                <img
+                  src="assets/images/تصویر-هشدار-زرد-گیربکس.webp"
+                  alt="هشدار زرد گیربکس در کامیون داف یورو 6"
+                  width="1280"
+                  height="799"
+                  loading="lazy"
+                />
+                <div class="home-article-copy">
+                  <span class="article-tag">گیربکس</span>
+                  <h3>هشدار زرد گیربکس</h3>
+                  <p>
+                    این هشدار چه معنایی دارد و چه زمانی ادامه رانندگی خطرناک
+                    است؟
                   </p>
+                  <div class="article-meta-home">
+                    <span>مهندس زارعی</span>
+                    <time datetime="2026-06-19">۲۹ خرداد ۱۴۰۵</time>
+                  </div>
                 </div>
-                <div class="article-meta">
-                  <span class="article-author">مهندس زارعی</span> |
-                  <time datetime="2026-06-19" class="article-date"
-                    >۲۹ خرداد ۱۴۰۵</time
-                  >
-                </div>
-                <a href="#" class="card-link" aria-labelledby="article-2"
-                  >مطالعه مقاله</a
-                >
               </article>
-            </li>
-            <li>
-              <article class="card card--article">
-                <div class="card-img">
-                  <img
-                    src="assets/images/تصویر-خطایEDC-کد3778.webp"
-                    alt="نمایش خطای EDC کد 3778 در کامیون های MAN Euro 6"
-                    width="1448"
-                    height="1086"
+
+              <article class="home-article-card">
+                <img
+                  src="assets/images/هشدار-زرد-موتور-450.webp"
+                  alt="هشدار زرد موتور در کامیون داف یورو 6"
+                  width="450"
+                  height="601"
+                  loading="lazy"
+                />
+                <div class="home-article-copy">
+                  <span class="article-tag">عیب‌یابی</span>
+                  <h3>هشدار زرد موتور</h3>
+                  <p>دلایل روشن‌شدن هشدار و اقدام درست پیش از آسیب بیشتر</p>
+                  <div class="article-meta-home">
+                    <span>مهندس زارعی</span>
+                    <time datetime="2026-06-19">۲۹ خرداد ۱۴۰۵</time>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="contact"
+          class="contact-band section"
+          aria-labelledby="contact-title"
+        >
+          <div class="home-container contact-layout">
+            <div class="contact-copy">
+              <span>مشاوره و هماهنگی مراجعه</span>
+              <h2 id="contact-title">برای عیب‌یابی خودروی شما آماده‌ایم</h2>
+              <p>
+                برای توضیح مشکل و رزرو زمان مراجعه، مستقیم با مهندس معین زارعی
+                در تماس باشید.
+              </p>
+            </div>
+            <div class="contact-actions">
+              <a href="tel:09184903391" class="home-btn home-btn--dark">
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.69 2.8a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.84.56 2.8.69A2 2 0 0 1 22 16.92z"
                   />
-                </div>
-                <h3 id="article-3" class="card-title">خطای EDC کد 3778</h3>
-                <div class="card-content">
-                  <p class="article-excerpt">
-                    خطای EDC 3778 در کامیون‌های MAN Euro 6 معمولاً به وجود مشکل
-                    در شیر کنترل فشار سوخت (M-Prop) روی پمپ فشار بالای سیستم
-                    کامان‌ریل اشاره دارد.
-                  </p>
-                </div>
-                <div class="article-meta">
-                  <span class="article-author">مهندس زارعی</span> |
-                  <time datetime="2026-06-19" class="article-date"
-                    >۲۹ خرداد ۱۴۰۵</time
-                  >
-                </div>
-                <a href="#" class="card-link" aria-labelledby="article-3"
-                  >مطالعه مقاله</a
-                >
-              </article>
-            </li>
-          </ul>
+                </svg>
+                ۰۹۱۸۴۹۰۳۳۹۱
+              </a>
+              <a
+                href="https://wa.me/989184903391?text=سلام،%20برای%20دریافت%20مشاوره%20درباره%20خدمات%20دیاگ%20خودروهای%20سنگین%20پیام%20می‌دهم."
+                class="home-btn home-btn--light"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                ارتباط در واتساپ
+              </a>
+            </div>
+          </div>
         </section>
       </main>
 
-      <!-- Footer Section -->
-      <footer class="footer-section">
-        <div class="footer-wrapper">
-          <ul class="footer-nav-list">
-            <li class="nav-item"><a href="#main">صفحه نخست</a></li>
-            <li class="nav-item"><a href="#services">خدمات ما</a></li>
-            <li class="nav-item"><a href="#articles">مقالات</a></li>
-            <li class="nav-item"><a href="#about-us">درباره ما</a></li>
-            <li class="nav-item"><a href="/">تماس با ما</a></li>
-          </ul>
-          <div class="contact-info-wrap">
-            <ul class="contact-list">
-              <li class="contact-item">
-                <address class="address">
-                  <!-- <i class="fa-solid fa-location-crosshairs"></i> -->
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-map-pin-icon lucide-map-pin footer-contact-icon"
-                  >
-                    <path
-                      d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
-                    />
-                    <circle cx="12" cy="10" r="3" />
-                  </svg>
-                  آدرس : اراک، کیلومتر ۵ جاده تهران، جنب نمایشگاه کامیون مشکانی
-                </address>
-              </li>
-              <li class="contact-item">
-                <!-- <i class="fa-solid fa-phone-flip"></i> -->
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-phone-icon lucide-phone footer-contact-icon"
-                >
-                  <path
-                    d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"
-                  />
-                </svg>
-                شماره تماس مهندس زارعی:
-                <a href="tel:09184903391" class="phone-num">09184903391</a>
-              </li>
-              <li class="contact-item">
-                <!-- <i class="fa-solid fa-clock"></i> -->
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-clock4-icon lucide-clock-4 footer-contact-icon"
-                >
-                  <circle cx="12" cy="12" r="10" />
-                  <path d="M12 6v6l4 2" />
-                </svg>
-                ساعت کاری : از 8 صبح تا 8 شب
-              </li>
-              <li class="contact-item social">
-                ما را در شبکه های اجتماعی دنبال کنید:
-                <div class="social-icons">
-                  <a
-                    href="https://www.instagram.com/diag.center.moein/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="اینستاگرام دیاگ سنتر معین"
-                  >
-                    <!-- <i class="fab fa-instagram"></i> -->
-                    <svg
-                      role="img"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="footer-social-icon"
-                    >
-                      <title>Instagram</title>
-                      <path
-                        d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"
-                      />
-                    </svg>
-                  </a>
-                  <a
-                    href="https://t.me/Mozed66"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="تلگرام دیاگ سنتر معین"
-                  >
-                    <!-- <i class="fab fa-telegram"></i> -->
-                    <svg
-                      role="img"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="footer-social-icon"
-                    >
-                      <title>Telegram</title>
-                      <path
-                        d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"
-                      />
-                    </svg>
-                  </a>
-                  <a
-                    href="https://wa.me/989184903391?text=سلام،%20برای%20دریافت%20مشاوره%20درباره%20خدمات%20دیاگ%20خودروهای%20سنگین%20پیام%20می‌دهم."
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="واتساپ دیاگ سنتر معین"
-                  >
-                    <!-- <i class="fab fa-whatsapp"></i> -->
-                    <svg
-                      role="img"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="footer-social-icon"
-                    >
-                      <title>WhatsApp</title>
-                      <path
-                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
-                      />
-                    </svg>
-                  </a>
-                </div>
-              </li>
-            </ul>
+      <footer class="home-footer">
+        <div class="home-container footer-main">
+          <div class="footer-brand">
+            <div>
+              <strong>دیاگ سنتر معین</strong>
+              <span>دیاگ، برق و ECU خودروهای سنگین</span>
+            </div>
+            <p>اعتماد رانندگان گران‌قدر سرمایه ماست.</p>
           </div>
-          <p class="slogan">
-            دیاگ سنتر معین | اعتماد رانندگان گران‌قدر سرمایه ما
-          </p>
+
+          <nav aria-label="پیوندهای پایین صفحه" class="footer-links">
+            <a href="#main">صفحه نخست</a>
+            <a href="#services">خدمات</a>
+            <a href="#articles">آموزش‌ها</a>
+            <a href="#about-us">درباره ما</a>
+          </nav>
+
+          <div class="footer-contact">
+            <address>
+              اراک، کیلومتر ۵ جاده تهران، جنب نمایشگاه کامیون مشکانی
+            </address>
+            <span>ساعت کاری: ۸ صبح تا ۸ شب</span>
+            <div class="footer-socials">
+              <a
+                href="https://www.instagram.com/diag.center.moein/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="اینستاگرام دیاگ سنتر معین"
+                >اینستاگرام</a
+              >
+              <a
+                href="https://t.me/Mozed66"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="تلگرام دیاگ سنتر معین"
+                >تلگرام</a
+              >
+              <a
+                href="https://wa.me/989184903391"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="واتساپ دیاگ سنتر معین"
+                >واتساپ</a
+              >
+            </div>
+          </div>
         </div>
-        <p class="copy-right">
-          <!-- <i class="fa-solid fa-copyright"></i> -->
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-copyright-icon lucide-copyright copy-right-icon"
-          >
-            <circle cx="12" cy="12" r="10" />
-            <path d="M14.83 14.83a4 4 0 1 1 0-5.66" />
-          </svg>
-          تمام حقوق این وبسایت برای دیاگ سنتر معین محفوظ می باشد.
+        <p class="footer-copyright">
+          © تمام حقوق این وب‌سایت برای دیاگ سنتر معین محفوظ است.
         </p>
       </footer>
-      <button class="scroll-top-btn" aria-label="بازگشت به ابتدای صفحه">
-        <!-- <i class="fa-solid fa-angle-up"></i> -->
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-chevron-up-icon lucide-chevron-up scroll-top-icon"
-        >
+
+      <button
+        class="scroll-top-btn"
+        type="button"
+        aria-label="بازگشت به ابتدای صفحه"
+      >
+        <svg aria-hidden="true" viewBox="0 0 24 24" class="scroll-top-icon">
           <path d="m18 15-6-6-6 6" />
         </svg>
       </button>
