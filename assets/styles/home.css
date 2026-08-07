@@ -643,7 +643,6 @@
 .home-page .about-copy h2 {
   max-width: 18ch;
   color: #fff;
-  /* font-size: 26px; */
 }
 
 .home-page .about-copy > p {
@@ -772,6 +771,50 @@
   font-size: 9px;
 }
 
+.home-page .article-read-more {
+  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+  padding: 6px 10px;
+  color: var(--home-blue);
+  background: var(--home-blue-soft);
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.5;
+  white-space: nowrap;
+  transition:
+    color 0.25s ease,
+    background-color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.home-page .article-read-more svg {
+  width: 14px;
+  height: 14px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform 0.25s ease;
+}
+
+.home-page .article-read-more:hover,
+.home-page .article-read-more:focus-visible {
+  color: #fff;
+  background: var(--home-blue);
+  border-color: var(--home-blue);
+}
+
+.home-page .article-read-more:hover svg,
+.home-page .article-read-more:focus-visible svg {
+  transform: translateX(-3px);
+}
+
 /* CTA */
 .home-page .contact-band {
   position: relative;
@@ -847,7 +890,6 @@
 
 .home-page .footer-main {
   display: grid;
-
   gap: 28px;
   padding-block: 38px 30px;
 }
@@ -861,6 +903,7 @@
 }
 
 .home-page .footer-brand span,
+.home-page .footer-brand p,
 .home-page .footer-contact {
   font-size: 11px;
   line-height: 1.9;
@@ -869,9 +912,6 @@
 .home-page .footer-brand p {
   margin-top: 8px;
   color: var(--home-yellow);
-  line-height: 1.9;
-  font-size: 16px;
-  font-weight: 600;
 }
 
 .home-page .footer-links {
@@ -1225,12 +1265,8 @@
   }
 
   .home-page .about-media {
-    min-height: 330px;
+    min-height: 430px;
   }
-  /* 
-  .home-page .about-copy #about-title {
-    font-size: 36px;
-  } */
 
   .home-page .about-copy > p {
     font-size: 16px;
@@ -1276,6 +1312,12 @@
   .home-page .article-meta-home {
     margin-top: auto;
     padding-top: 16px;
+    font-size: 11px;
+  }
+
+  .home-page .article-read-more {
+    margin-top: 12px;
+    padding: 7px 12px;
     font-size: 11px;
   }
 
