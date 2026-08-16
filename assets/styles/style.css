@@ -39,6 +39,9 @@
 html {
   scrollbar-gutter: stable;
   scroll-behavior: smooth;
+  html {
+    scroll-padding-top: 95px;
+  }
 }
 
 body {
@@ -96,6 +99,38 @@ textarea {
 .section-hidden {
   opacity: 0;
   transform: translateY(5rem);
+}
+
+/* Remove the blue tap highlight from interactive elements */
+a,
+button,
+[role="button"],
+input,
+select,
+textarea,
+summary {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Remove the default focus style when clicking or tapping */
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible),
+[role="button"]:focus:not(:focus-visible),
+input:focus:not(:focus-visible),
+select:focus:not(:focus-visible),
+textarea:focus:not(:focus-visible),
+summary:focus:not(:focus-visible) {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Prevent text selection on links and buttons */
+a,
+button,
+[role="button"],
+summary {
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 /* mobile styles */
@@ -572,6 +607,9 @@ p.copy-right .copy-right-icon {
 
 /* media screen for 768xp width */
 @media screen and (min-width: 768px) and (max-width: 1023.99px) {
+  html {
+    scroll-padding-top: 70px;
+  }
   main {
     margin: 0 20px;
   }

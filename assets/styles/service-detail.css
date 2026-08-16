@@ -1,0 +1,469 @@
+/* Shared, compact layout for the four individual service pages. */
+.service-detail-page {
+  --service-accent: var(--home-blue);
+  --service-accent-soft: var(--home-blue-soft);
+  background: var(--home-bg);
+}
+
+.service-detail-page.service-electrical {
+  --service-accent: #e49b12;
+  --service-accent-soft: #fff4d9;
+}
+
+.service-detail-page.service-ecu {
+  --service-accent: #7357bd;
+  --service-accent-soft: #f0ecff;
+}
+
+.service-detail-page.service-adblue {
+  --service-accent: #168c91;
+  --service-accent-soft: #e4f7f6;
+}
+
+.service-detail-page main {
+  min-height: 60vh;
+}
+
+.service-detail-page .service-hero {
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  background:
+    radial-gradient(
+      circle at 12% 20%,
+      rgba(8, 127, 189, 0.26),
+      transparent 32%
+    ),
+    var(--home-navy-dark);
+}
+
+.service-detail-page .service-hero::after {
+  content: "";
+  position: absolute;
+  bottom: -120px;
+  left: -90px;
+  width: 230px;
+  height: 230px;
+  border: 34px solid rgba(255, 188, 36, 0.07);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.service-detail-page .service-hero-inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 30px;
+  align-items: center;
+  padding-block: 42px 58px;
+}
+
+.service-detail-page .service-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 23px;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 11px;
+}
+
+.service-detail-page .service-breadcrumb a {
+  color: var(--home-yellow);
+  font-weight: 700;
+}
+
+.service-detail-page .service-breadcrumb a:hover {
+  color: #fff;
+}
+
+.service-detail-page .service-breadcrumb svg {
+  width: 13px;
+  height: 13px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+}
+
+.service-detail-page .service-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  color: var(--home-yellow);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.service-detail-page .service-kicker::before {
+  content: "";
+  width: 22px;
+  height: 3px;
+  border-radius: 99px;
+  background: currentColor;
+}
+
+.service-detail-page .service-hero h1 {
+  max-width: 690px;
+  margin: 0;
+  font-family: "lalehzar";
+  font-size: clamp(34px, 8vw, 55px);
+  font-weight: 400;
+  line-height: 1.3;
+  text-wrap: balance;
+}
+
+.service-detail-page .service-hero-copy > p {
+  max-width: 59ch;
+  margin-top: 13px;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 13px;
+  line-height: 2;
+}
+
+.service-detail-page .service-actions,
+.service-detail-page .service-contact-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 9px;
+}
+
+.service-detail-page .service-actions {
+  max-width: 450px;
+  margin-top: 23px;
+}
+
+.service-detail-page .service-btn {
+  min-height: 47px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 15px;
+  border: 1px solid transparent;
+  border-radius: 11px;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.service-detail-page .service-btn:hover {
+  transform: translateY(-2px);
+}
+
+.service-detail-page .service-btn--primary {
+  color: var(--home-navy-dark);
+  background: var(--home-yellow);
+}
+
+.service-detail-page .service-btn--outline {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.service-detail-page .service-btn--outline:hover {
+  color: var(--home-navy-dark);
+  background: #fff;
+}
+
+.service-detail-page .service-hero-card {
+  max-width: 430px;
+  margin-inline: auto;
+  padding: 24px;
+  margin-top: 50px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  box-shadow: 0 22px 45px rgba(0, 0, 0, 0.2);
+}
+
+.service-detail-page .service-hero-icon {
+  width: 72px;
+  height: 72px;
+  display: grid;
+  place-items: center;
+  color: var(--home-navy-dark);
+  background: var(--home-yellow);
+  border-radius: 19px;
+}
+
+.service-detail-page .service-hero-icon svg {
+  width: 39px;
+  height: 39px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.service-detail-page .service-hero-card strong {
+  display: block;
+  margin-top: 20px;
+  font-family: "lalehzar";
+  font-size: 27px;
+  font-weight: 400;
+}
+
+.service-detail-page .service-hero-points {
+  display: grid;
+  gap: 9px;
+  margin-top: 13px;
+}
+
+.service-detail-page .service-hero-points li {
+  position: relative;
+  padding-right: 22px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+.service-detail-page .service-hero-points li::before {
+  content: "✓";
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: var(--home-yellow);
+  font-weight: 700;
+}
+
+.service-detail-page .service-content {
+  padding-block: 62px;
+}
+
+.service-detail-page .service-heading {
+  max-width: 700px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.service-detail-page .service-heading > span {
+  color: var(--service-accent);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.service-detail-page .service-heading h2 {
+  margin-top: 5px;
+  color: var(--home-navy-dark);
+  font-family: "lalehzar";
+  font-size: clamp(28px, 6vw, 40px);
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.service-detail-page .service-heading p {
+  max-width: 58ch;
+  margin: 8px auto 0;
+  color: var(--home-muted);
+  font-size: 12px;
+  line-height: 1.95;
+}
+
+.service-detail-page .service-grid {
+  display: grid;
+  gap: 11px;
+  margin-top: 27px;
+}
+
+.service-detail-page .service-card {
+  padding: 21px 18px;
+  background: #fff;
+  border: 1px solid var(--home-border);
+  border-radius: 15px;
+}
+
+.service-detail-page .service-card-number {
+  width: 35px;
+  height: 35px;
+  display: grid;
+  place-items: center;
+  color: var(--service-accent);
+  background: var(--service-accent-soft);
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.service-detail-page .service-card h3 {
+  margin-top: 13px;
+  color: var(--home-navy-dark);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.service-detail-page .service-card p {
+  margin-top: 5px;
+  color: var(--home-muted);
+  font-size: 11px;
+  line-height: 1.9;
+}
+
+.service-detail-page .service-note {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 13px;
+  align-items: start;
+  max-width: 850px;
+  margin: 24px auto 0;
+  padding: 17px;
+  color: #324e60;
+  background: var(--service-accent-soft);
+  border-right: 4px solid var(--service-accent);
+  border-radius: 12px;
+}
+
+.service-detail-page .service-note svg {
+  width: 23px;
+  height: 23px;
+  fill: none;
+  stroke: var(--service-accent);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.service-detail-page .service-note strong {
+  display: block;
+  color: var(--home-navy-dark);
+  font-size: 12px;
+}
+
+.service-detail-page .service-note p {
+  margin-top: 3px;
+  font-size: 11px;
+  line-height: 1.85;
+}
+
+.service-detail-page .service-contact {
+  padding-block: 48px;
+  color: var(--home-navy-dark);
+  background: var(--home-yellow);
+}
+
+.service-detail-page .service-contact-inner {
+  display: grid;
+  gap: 21px;
+  text-align: center;
+}
+
+.service-detail-page .service-contact span {
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.service-detail-page .service-contact h2 {
+  margin-top: 3px;
+  font-family: "lalehzar";
+  font-size: clamp(28px, 6vw, 39px);
+  font-weight: 400;
+}
+
+.service-detail-page .service-contact p {
+  max-width: 55ch;
+  margin: 5px auto 0;
+  color: rgba(4, 31, 51, 0.74);
+  font-size: 11px;
+  line-height: 1.9;
+}
+
+.service-detail-page .service-btn--dark {
+  color: #fff;
+  background: var(--home-navy-dark);
+}
+
+.service-detail-page .service-btn--light {
+  color: var(--home-navy-dark);
+  background: #fff;
+}
+
+@media (max-width: 359px) {
+  .service-detail-page .service-actions,
+  .service-detail-page .service-contact-actions {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 600px) {
+  .service-detail-page .service-hero-inner {
+    padding-block: 58px 72px;
+  }
+
+  .service-detail-page .service-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .service-detail-page .service-card {
+    padding: 24px 21px;
+  }
+
+  .service-detail-page .service-card h3 {
+    font-size: 15px;
+  }
+
+  .service-detail-page .service-contact-actions {
+    max-width: 440px;
+    margin-inline: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .service-detail-page .service-hero-inner {
+    grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+    gap: 50px;
+  }
+
+  .service-detail-page .service-contact-inner {
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    text-align: right;
+  }
+
+  .service-detail-page .service-contact p,
+  .service-detail-page .service-contact-actions {
+    margin-inline: 0;
+  }
+
+  .service-detail-page .service-contact-actions {
+    min-width: 390px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .service-detail-page .service-hero-inner {
+    min-height: 480px;
+    padding-block: 66px 78px;
+  }
+
+  .service-detail-page .service-hero-copy > p,
+  .service-detail-page .service-heading p {
+    font-size: 13px;
+  }
+
+  .service-detail-page .service-content {
+    padding-block: 74px;
+  }
+
+  .service-detail-page .service-card h3 {
+    font-size: 16px;
+  }
+
+  .service-detail-page .service-card p {
+    font-size: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .service-detail-page *,
+  .service-detail-page *::before,
+  .service-detail-page *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
