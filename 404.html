@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, follow" />
+    <meta name="theme-color" content="#073451" />
+
+    <link rel="icon" href="/favicon.ico" />
+
+    <title>صفحه پیدا نشد | دیاگ سنتر معین</title>
+
+    <style>
+      @font-face {
+        font-family: "Vazirmatn";
+        src: url("/assets/fonts/Vazirmatn-Regular.woff2") format("woff2");
+        font-weight: 400;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Vazirmatn";
+        src: url("/assets/fonts/Vazirmatn-Bold.woff2") format("woff2");
+        font-weight: 700;
+        font-display: swap;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        padding: 24px;
+        display: grid;
+        place-items: center;
+        font-family: "Vazirmatn", sans-serif;
+        color: #073451;
+        background: #f2f6f9;
+      }
+
+      .error-card {
+        width: min(100%, 620px);
+        padding: 40px 24px;
+        text-align: center;
+        background: #ffffff;
+        border: 1px solid #dbe5eb;
+        border-radius: 20px;
+        box-shadow: 0 14px 35px rgba(7, 52, 81, 0.1);
+      }
+
+      .error-logo {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+      }
+
+      .error-code {
+        margin: 12px 0 0;
+        color: #a86400;
+        font-size: clamp(64px, 18vw, 110px);
+        font-weight: 700;
+        line-height: 1;
+      }
+
+      h1 {
+        margin: 20px 0 10px;
+        font-size: clamp(24px, 6vw, 34px);
+      }
+
+      p {
+        max-width: 480px;
+        margin: 0 auto;
+        color: #526773;
+        line-height: 1.9;
+      }
+
+      .error-actions {
+        margin-top: 28px;
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      .error-link {
+        min-width: 170px;
+        padding: 12px 20px;
+        color: #073451;
+        text-decoration: none;
+        border: 1px solid #073451;
+        border-radius: 10px;
+        font-weight: 700;
+      }
+
+      .error-link-primary {
+        color: #073451;
+        background: #ffb719;
+        border-color: #ffb719;
+      }
+
+      .error-link:focus-visible {
+        outline: 3px solid rgba(255, 183, 25, 0.45);
+        outline-offset: 3px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="error-card">
+      <img
+        class="error-logo"
+        src="/diag-center-logo.webp"
+        alt="لوگوی دیاگ سنتر معین"
+      />
+
+      <div class="error-code" aria-hidden="true">404</div>
+
+      <h1>صفحه موردنظر پیدا نشد</h1>
+
+      <p>
+        ممکن است آدرس صفحه تغییر کرده باشد یا لینک واردشده صحیح نباشد. از
+        گزینه‌های زیر برای ادامه استفاده کنید.
+      </p>
+
+      <div class="error-actions">
+        <a class="error-link error-link-primary" href="/">
+          بازگشت به صفحه اصلی
+        </a>
+
+        <a class="error-link" href="/services/allServices.html">
+          مشاهده خدمات
+        </a>
+      </div>
+    </main>
+  </body>
+</html>
