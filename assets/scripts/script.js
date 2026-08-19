@@ -10,12 +10,10 @@ const scrollToTopBtn = document.querySelector(".scroll-top-btn");
 // Services page variables
 const questionList = document.querySelector(".questions-list");
 const questionItems = document.querySelectorAll(".question-item");
-// const questionBtns = document.querySelectorAll(".question-btn");
 
 // reveal sections
 const revealSection = function (entries, observer) {
   const [entry] = entries;
-  // console.log(entry);
 
   if (!entry.isIntersecting) return;
 
@@ -78,24 +76,6 @@ if (questionList) {
     if (!clicked) return;
 
     const currentItem = clicked.closest(".question-item");
-
-    // if (currentItem.classList.contains("active")) {
-    //   currentItem.classList.remove("active");
-    //   clicked.setAttribute("aria-expanded", "false");
-    //   return;
-    // }
-
-    // // questionItems.forEach((item) => item.classList.remove("active"));
-    // questionItems.forEach(function (item) {
-    //   item.classList.remove("active");
-
-    //   item
-    //     .querySelector(".question-btn")
-    //     .setAttribute("aria-expanded", "false");
-    // });
-
-    // currentItem.classList.add("active");
-    // clicked.setAttribute("aria-expanded", "true");
 
     const isOpen = currentItem.classList.contains("active");
 
