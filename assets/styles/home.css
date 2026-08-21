@@ -534,7 +534,8 @@
   gap: 6px;
   margin-top: 16px;
   padding: 7px 11px;
-  color: var(--home-blue);
+  /* color: var(--home-blue); */
+  color: #075985;
   background: var(--home-blue-soft);
   border: 1px solid transparent;
   border-radius: 999px;
