@@ -143,6 +143,7 @@
 
 .home-page.show-mobile-menu header::before {
   z-index: 35;
+  pointer-events: none;
 }
 
 .home-page header .home-navbar .nav-list .nav-close-item {
